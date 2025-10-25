@@ -1,0 +1,322 @@
+{
+  "questions": [
+    {
+      "question": "Which among the following is the most probable application scenario for a smart grid?",
+      "options": [
+        "Home automation",
+        "Hospital networks",
+        "Intelligent power plants",
+        "Crop monitoring"
+      ],
+      "answer": "Intelligent power plants",
+      "explanation": "Smart grids integrate intelligent monitoring, control, and automation in power plants to optimize generation, distribution, and consumption of electricity efficiently."
+    },
+    {
+      "question": "With respect to a smart grid, which stakeholders are potentially benefitted?",
+      "options": [
+        "Energy Service providers",
+        "Energy consumers/customers",
+        "Both energy service provides and consumers",
+        "Neither energy service providers nor consumers"
+      ],
+      "answer": "Both energy service provides and consumers",
+      "explanation": "Smart grids enhance efficiency, reliability, and cost-effectiveness, benefiting both energy providers (through better load management) and consumers (through reliable service and energy savings)."
+    },
+    {
+      "question": "It is not possible to perform load forecasting using a smart grid.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "Smart grids collect real-time data from sensors and meters, allowing accurate load forecasting and better planning for peak demand and energy distribution."
+    },
+    {
+      "question": "With respect to the following Smart Grid architecture, which among the following is the most probable utility of the IP network?",
+      "options": [
+        "IP network has no utility",
+        "IP network is used to connect smart grid components globally for seamless data transfer",
+        "IP network is used for multimedia video streaming only",
+        "IP network is used to induce more congestion"
+      ],
+      "answer": "IP network is used to connect smart grid components globally for seamless data transfer",
+      "explanation": "IP networks in smart grids allow global communication between grid components, enabling monitoring, control, and data analytics across distributed systems."
+    },
+    {
+      "question": "Smart Home is an isolated concept and is not integrable with smart grid?",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": "False",
+      "explanation": "Smart homes can integrate with smart grids to optimize energy usage, enable demand response, and allow two-way communication between the home and utility providers."
+    },
+    {
+      "question": "Which of the following is a cloud application of smart grid?",
+      "options": [
+        "Information management",
+        "Energy management",
+        "Security",
+        "All of these"
+      ],
+      "answer": "All of these",
+      "explanation": "Cloud applications for smart grids include energy management, information management, and security solutions, enabling centralized monitoring, analysis, and decision-making."
+    },
+    {
+      "question": "Which of the following is not a vulnerability of Smart Grid?",
+      "options": [
+        "Integrity",
+        "Physical threats",
+        "Dynamic system attacks",
+        "None of these"
+      ],
+      "answer": "None of these",
+      "explanation": "All listed factors—integrity breaches, physical threats, and dynamic system attacks—are recognized vulnerabilities of smart grids; hence 'None of these' is correct as none is exempt."
+    },
+    {
+      "question": "IIoT corresponds to which industrial revolution?",
+      "options": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ],
+      "answer": "4th",
+      "explanation": "Industrial IoT (IIoT) is part of Industry 4.0, the fourth industrial revolution, which emphasizes digitalization, automation, and connected smart systems."
+    },
+    {
+      "question": "IIoT is inherently data intensive.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": "Yes",
+      "explanation": "IIoT generates and processes massive volumes of real-time data from industrial sensors, machines, and connected devices, making it inherently data-intensive."
+    },
+    {
+      "question": "Which among the following is one of the requirements and utility of IIoT?",
+      "options": [
+        "Power plant interruption",
+        "Power plant virtualization",
+        "Power plant decentralization",
+        "Power plant denotification"
+      ],
+      "answer": "Power plant virtualization",
+      "explanation": "IIoT enables virtualization of industrial processes like power plants, allowing simulation, monitoring, and control over virtualized environments for efficiency and flexibility."
+    },
+    {
+      "question": "Smart Grid follows which type of flow of energy?",
+      "options": [
+        "Bidirectional",
+        "Unidirectional",
+        "Both a and b",
+        "Neither a nor b"
+      ],
+      "answer": "Bidirectional",
+      "explanation": "Smart grids support bidirectional energy flow, enabling distributed generation (e.g., solar panels) to feed energy back into the grid in addition to consuming power."
+    },
+    {
+      "question": "What is the Flow of data?",
+      "options": [
+        "Acquisition > Generation > Storage > Analysis",
+        "Generation > Storage > Analysis > Acquisition",
+        "Generation > Acquisition > Storage > Analysis",
+        "None of these"
+      ],
+      "answer": "Generation > Acquisition > Storage > Analysis",
+      "explanation": "Data in smart grid and IIoT systems is first generated by sensors, acquired for processing, stored for future reference, and analyzed for insights and decision-making."
+    },
+    {
+      "question": "Intelligent transport system is least likely to render which of the following connectivity?",
+      "options": [
+        "Vehicle-to-vehicle connectivity",
+        "Vehicle-to-sensor connectivity",
+        "Vehicle-to-road infrastructure",
+        "Vehicle-to-home connectivity"
+      ],
+      "answer": "Vehicle-to-home connectivity",
+      "explanation": "Intelligent transport systems focus on V2V, V2I, and V2S connectivity for traffic management and safety; connectivity directly to a home is generally not within their scope."
+    },
+    {
+      "question": "Approximately around ________ of the total data available currently in the world is unstructured.",
+      "options": [
+        "20 %",
+        "40 %",
+        "60 %",
+        "80 %"
+      ],
+      "answer": "80 %",
+      "explanation": "Around 80% of global data is unstructured, including text, images, videos, and IoT sensor data, highlighting the need for advanced processing and analytics."
+    },
+    {
+      "question": "SQL manages ________________ data.",
+      "options": [
+        "Unstructured",
+        "Corrupt",
+        "Structured",
+        "Non-organized"
+      ],
+      "answer": "Structured",
+      "explanation": "SQL databases are designed to store and manage structured data organized in rows and columns with defined schemas."
+    },
+    {
+      "question": "Which among the following is the most probable application scenario for a smart grid?",
+      "options": [
+        "Home automation",
+        "Hospital networks",
+        "Intelligent power plants",
+        "Crop monitoring"
+      ],
+      "answer": "Intelligent power plants",
+      "explanation": "Smart grids integrate intelligent monitoring, control, and automation in power plants to optimize generation, distribution, and consumption of electricity efficiently."
+    },
+    {
+      "question": "With respect to a smart grid, which stakeholders are potentially benefitted?",
+      "options": [
+        "Energy Service providers",
+        "Energy consumers/customers",
+        "Both energy service provides and consumers",
+        "Neither energy service providers nor consumers"
+      ],
+      "answer": "Both energy service provides and consumers",
+      "explanation": "Smart grids enhance efficiency, reliability, and cost-effectiveness, benefiting both energy providers (through better load management) and consumers (through reliable service and energy savings)."
+    },
+    {
+      "question": "It is not possible to perform load forecasting using a smart grid.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "Smart grids collect real-time data from sensors and meters, allowing accurate load forecasting and better planning for peak demand and energy distribution."
+    },
+    {
+      "question": "With respect to the following Smart Grid architecture, which among the following is the most probable utility of the IP network?",
+      "options": [
+        "IP network has no utility",
+        "IP network is used to connect smart grid components globally for seamless data transfer",
+        "IP network is used for multimedia video streaming only",
+        "IP network is used to induce more congestion"
+      ],
+      "answer": "IP network is used to connect smart grid components globally for seamless data transfer",
+      "explanation": "IP networks in smart grids allow global communication between grid components, enabling monitoring, control, and data analytics across distributed systems."
+    },
+    {
+      "question": "Smart Home is an isolated concept and is not integrable with smart grid?",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": "False",
+      "explanation": "Smart homes can integrate with smart grids to optimize energy usage, enable demand response, and allow two-way communication between the home and utility providers."
+    },
+    {
+      "question": "Which of the following is a cloud application of smart grid?",
+      "options": [
+        "Information management",
+        "Energy management",
+        "Security",
+        "All of these"
+      ],
+      "answer": "All of these",
+      "explanation": "Cloud applications for smart grids include energy management, information management, and security solutions, enabling centralized monitoring, analysis, and decision-making."
+    },
+    {
+      "question": "Which of the following is not a vulnerability of Smart Grid?",
+      "options": [
+        "Integrity",
+        "Physical threats",
+        "Dynamic system attacks",
+        "None of these"
+      ],
+      "answer": "None of these",
+      "explanation": "All listed factors—integrity breaches, physical threats, and dynamic system attacks—are recognized vulnerabilities of smart grids; hence 'None of these' is correct as none is exempt."
+    },
+    {
+      "question": "IIoT corresponds to which industrial revolution?",
+      "options": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ],
+      "answer": "4th",
+      "explanation": "Industrial IoT (IIoT) is part of Industry 4.0, the fourth industrial revolution, which emphasizes digitalization, automation, and connected smart systems."
+    },
+    {
+      "question": "IIoT is inherently data intensive.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": "Yes",
+      "explanation": "IIoT generates and processes massive volumes of real-time data from industrial sensors, machines, and connected devices, making it inherently data-intensive."
+    },
+    {
+      "question": "Which among the following is one of the requirements and utility of IIoT?",
+      "options": [
+        "Power plant interruption",
+        "Power plant virtualization",
+        "Power plant decentralization",
+        "Power plant denotification"
+      ],
+      "answer": "Power plant virtualization",
+      "explanation": "IIoT enables virtualization of industrial processes like power plants, allowing simulation, monitoring, and control over virtualized environments for efficiency and flexibility."
+    },
+    {
+      "question": "Smart Grid follows which type of flow of energy?",
+      "options": [
+        "Bidirectional",
+        "Unidirectional",
+        "Both a and b",
+        "Neither a nor b"
+      ],
+      "answer": "Bidirectional",
+      "explanation": "Smart grids support bidirectional energy flow, enabling distributed generation (e.g., solar panels) to feed energy back into the grid in addition to consuming power."
+    },
+    {
+      "question": "What is the Flow of data?",
+      "options": [
+        "Acquisition > Generation > Storage > Analysis",
+        "Generation > Storage > Analysis > Acquisition",
+        "Generation > Acquisition > Storage > Analysis",
+        "None of these"
+      ],
+      "answer": "Generation > Acquisition > Storage > Analysis",
+      "explanation": "Data in smart grid and IIoT systems is first generated by sensors, acquired for processing, stored for future reference, and analyzed for insights and decision-making."
+    },
+    {
+      "question": "Intelligent transport system is least likely to render which of the following connectivity?",
+      "options": [
+        "Vehicle-to-vehicle connectivity",
+        "Vehicle-to-sensor connectivity",
+        "Vehicle-to-road infrastructure",
+        "Vehicle-to-home connectivity"
+      ],
+      "answer": "Vehicle-to-home connectivity",
+      "explanation": "Intelligent transport systems focus on V2V, V2I, and V2S connectivity for traffic management and safety; connectivity directly to a home is generally not within their scope."
+    },
+    {
+      "question": "Approximately around ________ of the total data available currently in the world is unstructured.",
+      "options": [
+        "20 %",
+        "40 %",
+        "60 %",
+        "80 %"
+      ],
+      "answer": "80 %",
+      "explanation": "Around 80% of global data is unstructured, including text, images, videos, and IoT sensor data, highlighting the need for advanced processing and analytics."
+    },
+    {
+      "question": "SQL manages ________________ data.",
+      "options": [
+        "Unstructured",
+        "Corrupt",
+        "Structured",
+        "Non-organized"
+      ],
+      "answer": "Structured",
+      "explanation": "SQL databases are designed to store and manage structured data organized in rows and columns with defined schemas."
+    }
+  ]
+}

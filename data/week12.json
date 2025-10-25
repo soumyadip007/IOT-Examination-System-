@@ -1,0 +1,322 @@
+{
+    "questions": [
+        {
+            "question": "Qualitative analysis refers to the process by which numerical data is analyzed?",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Qualitative analysis deals with non-numerical data, such as opinions, behaviors, or descriptions. Numerical data analysis is part of quantitative analysis."
+        },
+        {
+            "question": "Which of the following data analysis technique involve the use of study of difference of variance?",
+            "options": [
+                "ARIMA",
+                "ANOVA",
+                "DNN",
+                "OpenFlow"
+            ],
+            "answer": "ANOVA",
+            "explanation": "ANOVA (Analysis of Variance) is used to compare means across multiple groups and study differences in variance to determine statistical significance."
+        },
+        {
+            "question": "Given that you have an independent variable and that you want to predict the dependent variable based on the relationship between the two variables. Which among the following technique would you use?",
+            "options": [
+                "ANOVA",
+                "ARIMA",
+                "Regression Analysis",
+                "Pre-analysis"
+            ],
+            "answer": "Regression Analysis",
+            "explanation": "Regression analysis models the relationship between independent and dependent variables, allowing prediction of outcomes based on input variables."
+        },
+        {
+            "question": "With respect to AgriSens, how many logical layers are there in its architecture?",
+            "options": [
+                "Perception Layer",
+                "Processing Layer",
+                "Application Layer",
+                "All of the given"
+            ],
+            "answer": "All of the given",
+            "explanation": "AgriSens architecture consists of three logical layers: Perception Layer (sensing data), Processing Layer (data computation), and Application Layer (user-facing services)."
+        },
+        {
+            "question": "AgriSens supports real-time monitoring of soil moisture conditions and instant reporting to a dashboard.",
+            "options": [
+                "False",
+                "True"
+            ],
+            "answer": "True",
+            "explanation": "AgriSens enables real-time sensing of soil moisture and instant reporting to dashboards for farmers, allowing timely irrigation and monitoring."
+        },
+        {
+            "question": "What is the data aggregator also known as in the context of IoT in smart healthcare?",
+            "options": [
+                "CPU",
+                "LPU",
+                "APU",
+                "PPU"
+            ],
+            "answer": "PPU",
+            "explanation": "In smart healthcare IoT, the PPU (Processing and Aggregation Unit) aggregates sensor data from multiple devices before transmitting it to the cloud or dashboard."
+        },
+        {
+            "question": "The effect size for determining statistical significance is the standardized _________ difference between two groups.",
+            "options": [
+                "Median",
+                "Mean",
+                "Inter quartile range",
+                "None of the above"
+            ],
+            "answer": "Mean",
+            "explanation": "Effect size measures the standardized mean difference between two groups to assess the magnitude of an effect in statistical analysis."
+        },
+        {
+            "question": "Processing the sensed data on the device itself is known as __________ approach.",
+            "options": [
+                "Network based",
+                "In-place",
+                "Out of the place",
+                "None of these"
+            ],
+            "answer": "In-place",
+            "explanation": "In-place processing refers to analyzing data locally on the device, reducing latency and network bandwidth usage, commonly used in edge computing."
+        },
+        {
+            "question": "Processing the handheld activity device data with artificial intelligence can be used for ________.",
+            "options": [
+                "Fall detection",
+                "Heart rate detection",
+                "Vehicle detection",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "AI can analyze sensor data from handheld or wearable devices for multiple applications, including fall detection, heart rate monitoring, and detecting vehicle-related motion patterns."
+        },
+        {
+            "question": "Which of the following is an assumption of ANOVA?",
+            "options": [
+                "Homogeneity of variances",
+                "Normally distributed response variable",
+                "Independence of observations",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "ANOVA assumes homogeneity of variance, normally distributed response variable, and independence of observations to produce valid statistical results."
+        },
+        {
+            "question": "Select the statement(s) that denote the type of ANOVA.",
+            "options": [
+                "Statement I",
+                "Statement II",
+                "Statements I, II, and III",
+                "None of these"
+            ],
+            "answer": "Statements I, II, and III",
+            "explanation": "ANOVA can be one-way, two-way, or K-way depending on the number of independent factors considered in the analysis."
+        },
+        {
+            "question": "AmbuSense is a privacy-aware system",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "explanation": "AmbuSense ensures privacy by securing sensitive health data collected from wearable devices while providing real-time monitoring."
+        },
+        {
+            "question": "The two most relevant sensors directly used in agriculture are __________.",
+            "options": [
+                "Soil moisture and ECG sensor",
+                "Soil moisture and water level sensor",
+                "ECG sensor and water level sensor",
+                "All of these"
+            ],
+            "answer": "Soil moisture and water level sensor",
+            "explanation": "Agricultural IoT commonly uses soil moisture sensors to monitor irrigation needs and water level sensors for water resource management."
+        },
+        {
+            "question": "Examples of dispersion measures include _______ and ______.",
+            "options": [
+                "Discrete, categorical",
+                "Continuous, quantitative",
+                "Discrete, quantitative",
+                "Range, Variance"
+            ],
+            "answer": "Range, Variance",
+            "explanation": "Dispersion measures like range and variance indicate how spread out the data is, helping understand variability in datasets."
+        },
+        {
+            "question": "Suppose that your smartphone tilts by an angle of 15 degrees. Which among the following sensors will detect this tilt?",
+            "options": [
+                "HC-SR04",
+                "Gyroscope",
+                "Accelerometer",
+                "Monometer"
+            ],
+            "answer": "Gyroscope",
+            "explanation": "A gyroscope measures angular velocity and orientation, allowing detection of tilt angles, while an accelerometer measures linear acceleration."
+        },
+        {
+            "question": "The two types of data analysis are",
+            "options": [
+                "Qualitative and Quantitative",
+                "Repetitive and Quantitative",
+                "Repetitive and Qualitative",
+                "All of these"
+            ],
+            "answer": "Qualitative and Quantitative",
+            "explanation": "Data analysis is of two types: qualitative, which studies non-numerical data like opinions and descriptions, and quantitative, which deals with numerical data and statistics. Both help in understanding and interpreting information effectively."
+        },
+        {
+            "question": "To perform an ANOVA, we must have a ..... response variable and at least one.... factor.",
+            "options": [
+                "Discrete, categorical",
+                "Continuous, quantitative",
+                "Discrete, quantitative",
+                "Continuous, categorical"
+            ],
+            "answer": "Continuous, categorical",
+            "explanation": "ANOVA requires a continuous response variable to measure differences and at least one categorical factor to compare groups. It tests whether the means of different categories are statistically different."
+        },
+        {
+            "question": "Select the statement(s) that denote the type of ANOVA.",
+            "options": [
+                "Statement I",
+                "Statement II",
+                "Statements I, II, and III",
+                "None of these"
+            ],
+            "answer": "Statements I, II, and III",
+            "explanation": "ANOVA can be classified based on the number of factors studied: One-way ANOVA involves a single factor, Two-way ANOVA involves two factors, and K-way ANOVA generalizes it to multiple factors. All these types help in analyzing differences across groups."
+        },
+        {
+            "question": "What is the type of the data dispersion?",
+            "options": [
+                "Range",
+                "Average absolute deviation",
+                "Variance",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "Data dispersion shows how spread out data values are. Range measures the difference between maximum and minimum, average absolute deviation shows average distance from the mean, and variance quantifies the overall spread using squared differences. All are types of dispersion."
+        },
+        {
+            "question": "The two most relevant sensors directly used in agriculture are ...........",
+            "options": [
+                "Soil moisture and proximity sensor",
+                "Soil moisture and water level sensor",
+                "ECG sensor and water level sensor",
+                "All of these"
+            ],
+            "answer": "Soil moisture and water level sensor",
+            "explanation": "In agriculture, soil moisture sensors monitor the water content in soil for optimal irrigation, while water level sensors track water availability for crops. These sensors help in efficient water management and improving crop yield."
+        },
+        {
+            "question": "The mathematical equation that is formulated in the form of relationships between variables is known as........",
+            "options": [
+                "Logical model",
+                "Relational model",
+                "Data dispersion",
+                "Statistical model"
+            ],
+            "answer": "Statistical model",
+            "explanation": "A statistical model represents the relationship between variables using mathematical equations. It helps in understanding, predicting, and analyzing data patterns. Logical or relational models do not quantify these relationships mathematically."
+        },
+        {
+            "question": "What are the two types of statistical models?",
+            "options": [
+                "Qualitative and quantitative",
+                "Complete and incomplete",
+                "Regression and dispersion",
+                "None of these"
+            ],
+            "answer": "Complete and incomplete",
+            "explanation": "Statistical models are classified as complete when they fully describe the population parameters, and incomplete when they provide only partial information. This distinction helps in determining the accuracy and scope of data analysis."
+        },
+        {
+            "question": "Select the correct order of the component layers present in the IoT healthcare.",
+            "options": [
+                "Sensing layer, cloud platform layer, aggregated layer, processing layer",
+                "Sensing layer, aggregated layer, processing layer, cloud platform layer",
+                "Aggregated layer, sensing layer, processing layer, cloud platform layer",
+                "Sensing layer, processing layer, aggregated layer, cloud platform layer"
+            ],
+            "answer": "Sensing layer, aggregated layer, processing layer, cloud platform layer",
+            "explanation": "In IoT healthcare, the sensing layer collects data from devices, the aggregated layer organizes it, the processing layer analyzes the data, and the cloud platform layer stores and manages it for access and decision-making. This order ensures smooth data flow and effective monitoring."
+        },
+        {
+            "question": "Wireless IoT driven solutions for remote healthcare facility provisioning brings healthcare to patients than bringing patients to healthcare.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "explanation": "Wireless IoT solutions enable remote monitoring and diagnosis, allowing patients to receive healthcare at home. This reduces the need for physical visits, making healthcare more accessible and efficient."
+        },
+        {
+            "question": "Which of the following handheld devices are used for activity monitoring?",
+            "options": [
+                "EEG and GPS",
+                "Accelerometer and EEG",
+                "Accelerometer and GPS",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "Accelerometers track movement and activity levels, while GPS monitors location and distance traveled. EEG can monitor brain activity in some advanced wearable devices. Together, they are used in handheld devices for activity and health monitoring."
+        },
+        {
+            "question": "Which of the following are components of IoT?",
+            "options": [
+                "Sensing layer",
+                "Aggregated layer",
+                "Processing layer",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "IoT consists of multiple layers: the sensing layer collects data from devices, the aggregated layer organizes and transmits it, and the processing layer analyzes and interprets the data. All these components work together to make IoT functional."
+        },
+        {
+            "question": "By performing continuous monitoring of a person's activity, it is not possible to observe his/her behavior or to identify any repetitive pattern in his/her day-to-day activity.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Continuous monitoring of a person's activity allows tracking behavior and identifying repetitive patterns in daily routines. This helps in health assessment, habit analysis, and early detection of anomalies."
+        },
+        {
+            "question": "Deep learning based data analysis cannot be performed on videos",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Deep learning can analyze videos by processing frames to detect objects, actions, and patterns. Techniques like convolutional neural networks (CNNs) and recurrent neural networks (RNNs) make video data analysis possible and effective."
+        },
+        {
+            "question": "Which of the following are the inbuilt sensors that are present in high end smartphones?",
+            "options": [
+                "ECG and EEG",
+                "Accelerometer, proximity sensor, and EEG",
+                "Accelerometer, Compass, and Gyroscope",
+                "Pressure sensor and NPK sensor"
+            ],
+            "answer": "Accelerometer, Compass, and Gyroscope",
+            "explanation": "High-end smartphones typically include accelerometers (for motion detection), compasses (for orientation), and gyroscopes (for precise rotation sensing). These sensors enable features like navigation, gaming, and activity tracking."
+        },
+        {
+            "question": "Processing the handheld activity device data with artificial intelligence can be used for",
+            "options": [
+                "Fall detection",
+                "Heart rate detection",
+                "Vehicle detection",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "AI can process data from handheld activity devices, such as accelerometers and gyroscopes, to detect unusual movements. Fall detection uses this analysis to alert caregivers, while other activities like heart rate monitoring or vehicle detection can also be performed."
+        }
+    ]
+}

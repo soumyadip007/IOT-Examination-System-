@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following is/are current challenges in IoT?",
+      "options": [
+        "Large scale of co-operation",
+        "Global heterogeneity",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "answer": "Both (a) and (b)",
+      "explanation": "IoT faces challenges due to the large scale of cooperation among devices and global heterogeneity in protocols, standards, and platforms."
+    },
+    {
+      "question": "State True or False. Statement: \"Interoperability is not a characteristic of a product or system.\"",
+      "options": ["True", "False"],
+      "answer": "False",
+      "explanation": "Interoperability is indeed a characteristic of a system or product, referring to its ability to work seamlessly with other systems."
+    },
+    {
+      "question": "Interoperability is required because",
+      "options": [
+        "There are different programming languages",
+        "There are different communication protocols",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "answer": "Both (a) and (b)",
+      "explanation": "Interoperability is essential due to the diversity in programming languages and communication protocols used by IoT devices."
+    },
+    {
+      "question": "State whether the following statement is true or false: \"Use of different programming languages such as JavaScript, Python, JAVA, and others is an example of heterogeneity in IoT. This brings in the need for interoperability.\"",
+      "options": ["False", "True"],
+      "answer": "True",
+      "explanation": "Heterogeneity in programming languages necessitates interoperability to enable seamless communication and integration of devices."
+    },
+    {
+      "question": "State True or False. Statement: \"The interoperability between devices and device users in terms of message formats is called Systematic Interoperability.\"",
+      "options": ["True", "False"],
+      "answer": "False",
+      "explanation": "This is not called Systematic Interoperability; message format compatibility is one aspect of general interoperability."
+    },
+    {
+      "question": "What is the full form of UMB in IoT interoperability?",
+      "options": [
+        "Universal Meta Bridge",
+        "Universal Main Bridge",
+        "Universal Main Bracket",
+        "None of these"
+      ],
+      "answer": "None of these",
+      "explanation": "UMB does not stand for any of the options listed in standard IoT interoperability terminologies."
+    },
+    {
+      "question": "State true or false: Arduino is an open-source electronic programmable board.",
+      "options": ["True", "False"],
+      "answer": "True",
+      "explanation": "Arduino boards are open-source hardware and software platforms, allowing anyone to study, modify, and distribute designs."
+    },
+    {
+      "question": "State true or false: Additional electronic circuits are essential to load a program into the Arduino controller board.",
+      "options": ["True", "False"],
+      "answer": "False",
+      "explanation": "Programs can be loaded directly via USB using the Arduino IDE; additional circuits are not required for programming."
+    },
+    {
+      "question": "Arduino UNO has …………. number of Digital I/O pins.",
+      "options": ["8", "13", "14", "None of these"],
+      "answer": "14",
+      "explanation": "Arduino UNO has 14 digital input/output pins, which can be used for reading sensors or controlling actuators."
+    },
+    {
+      "question": "What does the following code do? (Assume blink code snippet)",
+      "options": [
+        "Blink 3 times with 1000ms ON and 500ms OFF",
+        "Blink 3 times with 500ms ON and 500ms OFF",
+        "Blink 3 times with 1000ms ON and 1000ms OFF",
+        "Stay ON continuously"
+      ],
+      "answer": "Blink 3 times with 1000ms ON and 500ms OFF",
+      "explanation": "The code sets the LED to blink three times with the specified ON and OFF durations as coded in delay() functions."
+    },
+    {
+      "question": "How many types of loops will you find in Arduino Programming?",
+      "options": ["1", "2", "3", "4"],
+      "answer": "3",
+      "explanation": "Arduino programming supports for loops, while loops, and do-while loops, making a total of 3 primary loop types."
+    },
+    {
+      "question": "Choose the right option for if/conditional operator in Arduino/C syntax.",
+      "options": [
+        "Val = (condition)? (Statement 1):(Statement 2)",
+        "Val = (condition)? (Statement 2):(Statement 1)",
+        "Val = (condition): (Statement 1)?(Statement 2)",
+        "Val = (condition): (Statement 2)?(Statement 1)"
+      ],
+      "answer": "Val = (condition)? (Statement 1):(Statement 2)",
+      "explanation": "The ternary operator syntax in C/Arduino is condition ? value_if_true : value_if_false."
+    },
+    {
+      "question": "What is the purpose of calling dht.begin(); in the setup() function?",
+      "options": [
+        "To initialize the Serial Monitor",
+        "To start communication with the DHT sensor",
+        "To set the temperature and humidity values to zero",
+        "To define the data pin for the sensor"
+      ],
+      "answer": "To start communication with the DHT sensor",
+      "explanation": "dht.begin() initializes the DHT sensor, preparing it for reading temperature and humidity data."
+    },
+    {
+      "question": "What function is used to read the humidity value from the DHT sensor?",
+      "options": ["dht.getHumidity();", "dht.readTemp();", "dht.readHumidity();", "dht.getTemperature();"],
+      "answer": "dht.readHumidity();",
+      "explanation": "dht.readHumidity() returns the humidity value read from the DHT sensor."
+    },
+    {
+      "question": "What function is used to set the servo motor to a specific angle?",
+      "options": ["ServoDemo.move()", "ServoDemo.rotate()", "ServoDemo.write()", "ServoDemo.setAngle()"],
+      "answer": "ServoDemo.write()",
+      "explanation": "ServoDemo.write(angle) sets the servo motor to the desired angle in degrees."
+    }
+  ]
+}

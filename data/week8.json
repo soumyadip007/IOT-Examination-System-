@@ -1,0 +1,322 @@
+{
+    "questions": [
+        {
+            "question": "What is Sensor Openflow?",
+            "options": [
+                "A traditional routing protocol",
+                "A queue management protocol",
+                "An SDN protocol tailored for IoT devices",
+                "A physical connectivity protocol"
+            ],
+            "answer": "An SDN protocol tailored for IoT devices",
+            "explanation": "Sensor Openflow is an SDN protocol specifically designed to manage and control IoT devices efficiently."
+        },
+        {
+            "question": "With respect to Mobi-Flow, how does Mobi-Flow fare in comparison to Conventional networking in terms of message overhead?",
+            "options": [
+                "Mobi-Flow > Conventional",
+                "Mobi-Flow < Conventional",
+                "Mobi-Flow = Conventional",
+                "None of the given"
+            ],
+            "answer": "Mobi-Flow < Conventional",
+            "explanation": "Mobi-Flow reduces message overhead compared to conventional networking by optimizing flow rule placements for mobile IoT devices."
+        },
+        {
+            "question": "Virtual Machines came before Cloud Computing.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "explanation": "Virtual machines existed before cloud computing, providing a foundation for virtualization and resource sharing in cloud environments."
+        },
+        {
+            "question": "Private cloud services cannot provide Software-as-a-Service (SaaS).",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Private cloud services can provide SaaS; they are just limited to a single organization and may offer internal applications via SaaS."
+        },
+        {
+            "question": "Which among the following is a solution for mobility-aware flow rule placement in SDIoT?",
+            "options": [
+                "Mobility-Flow",
+                "Mobile-Flow",
+                "Mobi-Flow",
+                "M-Flow"
+            ],
+            "answer": "Mobi-Flow",
+            "explanation": "Mobi-Flow is a protocol designed for mobility-aware flow rule placement in SDIoT networks."
+        },
+        {
+            "question": "An organization wants to deploy a cloud infrastructure with majority data in public cloud and certain private data on-premise. Which deployment model should be used?",
+            "options": [
+                "Private Cloud",
+                "Public Cloud",
+                "Hybrid Cloud",
+                "Any of these"
+            ],
+            "answer": "Hybrid Cloud",
+            "explanation": "Hybrid Cloud allows sensitive data to remain on private servers while using public cloud resources for general data and services."
+        },
+        {
+            "question": "Which among the following is the most on-premise cloud deployment model?",
+            "options": [
+                "Private Cloud",
+                "Public Cloud",
+                "IaaS",
+                "PaaS"
+            ],
+            "answer": "Private Cloud",
+            "explanation": "Private Cloud is hosted on-premise and managed for the organization, offering maximum control over infrastructure."
+        },
+        {
+            "question": "Which type of client requires constant communication/connection with the cloud server?",
+            "options": [
+                "Thin client",
+                "Thick client",
+                "Both thin and thick clients",
+                "None of these"
+            ],
+            "answer": "Thin client",
+            "explanation": "Thin clients rely on the cloud server for processing and require constant connectivity, unlike thick clients which handle computation locally."
+        },
+        {
+            "question": "What does 'CIA' in cloud data security stand for?",
+            "options": [
+                "Confidentiality, Integrity, Availability",
+                "Confidentiality, Inheritance, Automation",
+                "Congestion, Integrity, Authentication",
+                "Criticality, Integrity, Accountability"
+            ],
+            "answer": "Confidentiality, Integrity, Availability",
+            "explanation": "CIA triad represents the core principles of cloud security: keeping data confidential, accurate, and accessible."
+        },
+        {
+            "question": "When accessing Spotify online via a browser without installing it, which cloud service model is being used?",
+            "options": [
+                "SaaS",
+                "PaaS",
+                "IaaS",
+                "DaaS"
+            ],
+            "answer": "SaaS",
+            "explanation": "Spotify delivered via browser is a Software-as-a-Service (SaaS) model, providing software through the cloud without local installation."
+        },
+        {
+            "question": "With respect to Cloud Computing security, which of the following are necessary?",
+            "options": [
+                "Network Level Security but not Host Level Security",
+                "Application Level Security but not Host Level Security",
+                "Host Level Security but not Network Level Security",
+                "All of Network, Host and Application Level Security"
+            ],
+            "answer": "All of Network, Host and Application Level Security",
+            "explanation": "Complete cloud security requires measures at all levels: network, host, and application."
+        },
+        {
+            "question": "Data security and client authentication is an issue in which cloud service models?",
+            "options": [
+                "SaaS",
+                "SaaS and PaaS",
+                "IaaS",
+                "All of them"
+            ],
+            "answer": "All of them",
+            "explanation": "Security and authentication concerns are present in SaaS, PaaS, and IaaS models, though they manifest differently."
+        },
+        {
+            "question": "What is the role of a Hypervisor?",
+            "options": [
+                "To facilitate installation of a router",
+                "To provide a platform for executing virtual machines",
+                "To facilitate sensor fabrication",
+                "To communicate between switches themselves"
+            ],
+            "answer": "To provide a platform for executing virtual machines",
+            "explanation": "A hypervisor enables virtualization by creating and managing virtual machines on physical hardware."
+        },
+        {
+            "question": "Which of the following is a limitation of SaaS?",
+            "options": [
+                "Remote software execution",
+                "Platform independence",
+                "Centralized control",
+                "None of these"
+            ],
+            "answer": "Centralized control",
+            "explanation": "SaaS solutions rely on centralized servers for execution, which can limit local customization and control."
+        },
+        {
+            "question": "Fill in the blank: ………………………….. means independent of device or location.",
+            "options": [
+                "Scalable",
+                "Reliability",
+                "Agile",
+                "Ubiquitous"
+            ],
+            "answer": "Ubiquitous",
+            "explanation": "Ubiquitous computing or cloud services refers to the ability to access services anytime, anywhere, independent of device or location."
+        },
+        {
+            "question": "Which of the following is true with respect to Network Virtualization?",
+            "options": [
+                "It abstracts the virtual network on a physical network",
+                "It abstracts the physical network on a virtual network",
+                "It is essentially a collection of physical SDN routers",
+                "Network virtualization is a non-existent concept"
+            ],
+            "answer": "It abstracts the physical network on a virtual network",
+            "explanation": "Network Virtualization abstracts the physical network resources (routers, switches, links) and presents them as virtual, programmable networks, enabling multiple isolated virtual networks to operate over the same physical infrastructure."
+        },
+        {
+            "question": "For rule placement at the edge with respect to Software Defined IoT, which of the following is a critical issue?",
+            "options": [
+                "Existence of IoT nodes",
+                "Data through routers",
+                "Mobility of end users and nodes",
+                "None of the given"
+            ],
+            "answer": "Mobility of end users and nodes",
+            "explanation": "Mobility of end users and nodes is critical for edge rule placement because frequent movement changes network topology, requiring dynamic, low-latency updates to flow rules for efficient data routing and service continuity."
+        },
+        {
+            "question": "Which cloud service model allows users to deploy and control their own software, including operating systems, while the provider manages the infrastructure?",
+            "options": [
+                "SaaS",
+                "PaaS",
+                "IaaS",
+                "DBaaS"
+            ],
+            "answer": "IaaS",
+            "explanation": "Infrastructure as a Service (IaaS) provides virtualized computing resources over the internet, allowing users to deploy and control their own operating systems and applications while the provider manages the underlying hardware."
+        },
+        {
+            "question": "Which of the following is NOT a characteristic of Platform-as-a-Service (PaaS)?",
+            "options": [
+                "Provides tools for application deployment",
+                "Requires users to manage the virtual machines",
+                "Offers elastic scaling of applications",
+                "Simplifies development by abstracting the infrastructure"
+            ],
+            "answer": "Requires users to manage the virtual machines",
+            "explanation": "PaaS abstracts the underlying infrastructure, including VMs, so users focus on deploying and managing applications rather than managing VMs."
+        },
+        {
+            "question": "Which essential characteristic of cloud computing refers to the ability of resources to be scaled up or down automatically?",
+            "options": [
+                "Resource pooling",
+                "Broad network access",
+                "Elasticity",
+                "None of the given"
+            ],
+            "answer": "Elasticity",
+            "explanation": "Elasticity allows resources to be automatically scaled up or down to match demand, ensuring optimal performance and cost-efficiency."
+        },
+        {
+            "question": "An organization wants to deploy a cloud infrastructure with majority data in public cloud and certain private data on-premise. Which deployment model should be used?",
+            "options": [
+                "Private Cloud",
+                "Public Cloud",
+                "Hybrid Cloud",
+                "Any of these"
+            ],
+            "answer": "Hybrid Cloud",
+            "explanation": "Hybrid Cloud combines public cloud for general data and private cloud for sensitive on-premise data, meeting needs for scalability and secure access."
+        },
+        {
+            "question": "A Private Cloud deployment model cannot provide IaaS but can provide PaaS.",
+            "options": [
+                "False",
+                "True"
+            ],
+            "answer": "False",
+            "explanation": "Private Cloud can provide IaaS, PaaS, or SaaS; 'private' only refers to exclusive use by a single organization."
+        },
+        {
+            "question": "What is the primary function of a Light Virtual Access Point (LVAP) in the ODN architecture for SDN-based IoT?",
+            "options": [
+                "Acts as a firewall between user devices and access points",
+                "Enables virtualization of Wi-Fi APs for per-client network control",
+                "Encrypts user traffic before forwarding to the cloud",
+                "Controls routing at the backbone of the network"
+            ],
+            "answer": "Enables virtualization of Wi-Fi APs for per-client network control",
+            "explanation": "LVAP virtualizes access points, allowing each client device to have its own virtual AP for fine-grained network management and mobility support."
+        },
+        {
+            "question": "With respect to Virtualization, if one VM runs on a hypervisor, another VM is unable to use the hypervisor?",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "A hypervisor manages multiple VMs simultaneously; one VM using it does not prevent others from running on the same host."
+        },
+        {
+            "question": "Through which cloud service model do you use an image editing application without explicitly installing it on your local system?",
+            "options": [
+                "SaaS",
+                "PaaS",
+                "IaaS",
+                "DaaS"
+            ],
+            "answer": "SaaS",
+            "explanation": "SaaS delivers applications over the internet, allowing use of software like an image editor through a browser without local installation."
+        },
+        {
+            "question": "Which of the following best defines 'measured service' in cloud computing?",
+            "options": [
+                "Cloud resources are billed only annually",
+                "Users must request reports manually for resource usage",
+                "Cloud systems automatically control and optimize resources based on metering",
+                "None of the given"
+            ],
+            "answer": "Cloud systems automatically control and optimize resources based on metering",
+            "explanation": "'Measured service' means cloud providers monitor, control, and report resource usage for transparency and billing based on actual consumption."
+        },
+        {
+            "question": "With respect to Cloud security, which is generally expected to have a higher level of security?",
+            "options": [
+                "Public Cloud",
+                "Private Cloud"
+            ],
+            "answer": "Private Cloud",
+            "explanation": "Private Cloud, being on-premise or dedicated, offers stricter access control, customized security policies, and isolated infrastructure."
+        },
+        {
+            "question": "Data security and client authentication is an issue in which cloud service models?",
+            "options": [
+                "SaaS",
+                "SaaS and PaaS",
+                "IaaS",
+                "All of them"
+            ],
+            "answer": "All of them",
+            "explanation": "Security and authentication concerns exist across SaaS, PaaS, and IaaS models, as all involve remote data storage and access."
+        },
+        {
+            "question": "In cloud computing, users have specific knowledge about the exact physical location of the computing hardware?",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Cloud computing provides location independence; users generally do not know the physical location of hardware."
+        },
+        {
+            "question": "GreenCloud implementation focuses most on which of the following aspects?",
+            "options": [
+                "Scalability",
+                "Energy",
+                "Reversibility",
+                "Computation"
+            ],
+            "answer": "Energy",
+            "explanation": "GreenCloud aims to reduce energy consumption in data centers via efficient resource allocation, dynamic voltage scaling, and power-aware scheduling."
+        }
+    ]
+}

@@ -1,0 +1,185 @@
+{
+    "questions": [
+      {
+        "question": "IoT stands for ………………………",
+        "options": ["Internet of Tasks", "Internet of Tuples", "Internet of Things", "None of these"],
+        "answer": "Internet of Things",
+        "explanation": "IoT stands for Internet of Things, referring to a network of connected devices that collect and exchange data."
+      },
+      {
+        "question": "Which of the following technologies have unified and has resulted in the evolution of IoT?",
+        "options": ["High-power embedded systems", "Super Computing", "Engine Technology", "None of these"],
+        "answer": "None of these",
+        "explanation": "Technologies like low-power embedded systems, cloud computing, and machine learning have unified to enable IoT."
+      },
+      {
+        "question": "Which of the following are the enablers of IoT?",
+        "options": ["RFID", "Nanotechnology", "Sensors", "All of these"],
+        "answer": "All of these",
+        "explanation": "RFID, sensors, and nanotechnology are key enablers of IoT, enabling connectivity and data exchange."
+      },
+      {
+        "question": "Which of the following is NOT a function of an IoT LAN?",
+        "options": ["Long range communication, global", "World wide connections", "Both (a) and (b)", "Neither (a) Nor (b)"],
+        "answer": "Both (a) and (b)",
+        "explanation": "IoT LANs handle local communication; global or worldwide connections are managed by WAN or Internet layers."
+      },
+      {
+        "question": "The integration of existing devices, smart devices, and constrained nodes in a singular framework is one of the reasons for the address crunch in IoT.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "Integration of multiple devices increases the need for unique IP addresses, leading to address exhaustion."
+      },
+      {
+        "question": "In Multi-homing, a node/network is connected to a single network for improved reliability.",
+        "options": ["True", "False"],
+        "answer": "False",
+        "explanation": "Multi-homing involves connecting a node or network to multiple networks for redundancy and reliability."
+      },
+      {
+        "question": "Which of the following is/are the approach/approaches for multi-homing?",
+        "options": ["Proxy-based approach", "Gateway-based approach", "Both (a) and (b)", "None of these"],
+        "answer": "Both (a) and (b)",
+        "explanation": "Both proxy-based and gateway-based approaches are used for implementing multi-homing in IoT systems."
+      },
+      {
+        "question": "IPv6 uses ………………………….. notation for its representation.",
+        "options": ["Hexadecimal", "Binary", "Decimal", "None of these"],
+        "answer": "Hexadecimal",
+        "explanation": "IPv6 addresses are represented in hexadecimal notation, allowing compact representation of 128-bit addresses."
+      },
+      {
+        "question": "The parameters sensed by a sensor may be sent to the cloud for further processing.",
+        "options": ["False", "True"],
+        "answer": "True",
+        "explanation": "IoT devices often send sensed data to the cloud for storage, analytics, and further decision-making."
+      },
+      {
+        "question": "The IPv6 notation uses ………………………… number of bits to represent an address.",
+        "options": ["64", "128", "Both (a) and (b)", "Neither (a) nor (b)"],
+        "answer": "128",
+        "explanation": "IPv6 addresses are 128 bits long, providing a vastly larger address space than IPv4."
+      },
+      {
+        "question": "A sensor is -",
+        "options": ["Only sensitive to the measured property", "Insensitive to any other property that what the sensor is made to sense", "Both (a) and (b)", "None of these"],
+        "answer": "Both (a) and (b)",
+        "explanation": "Sensors are designed to detect specific properties while being insensitive to others."
+      },
+      {
+        "question": "We classify sensors based on -",
+        "options": ["Output", "Data type", "Both (a) and (b)", "None of these"],
+        "answer": "Both (a) and (b)",
+        "explanation": "Sensors can be classified based on their output type (analog or digital) and the data type they handle."
+      },
+      {
+        "question": "Which of the following is correct statement?",
+        "options": ["Controlling AC loads using low DC signals", "Relays are electromechanical", "Relays are actuators", "All of these"],
+        "answer": "All of these",
+        "explanation": "All the statements are correct; relays are electromechanical devices used to control AC loads using DC signals."
+      },
+      {
+        "question": "Based on the output, sensors are classified as ……………………",
+        "options": ["Analog", "Digital", "Both (a) and (b)", "Neither (a) nor (b)"],
+        "answer": "Both (a) and (b)",
+        "explanation": "Sensors can output analog or digital signals depending on their design and application."
+      },
+      {
+        "question": "Soft actuators are -",
+        "options": ["Polymer-based", "Mechanical", "Electromechanical", "None of these"],
+        "answer": "Polymer-based",
+        "explanation": "Soft actuators are made from polymer materials that deform under external stimuli to produce motion."
+      },
+      {
+        "question": "Which of the following is/are not a thing as per IoT?",
+        "options": ["Fan", "Light", "Refrigerator", "None of the these"],
+        "answer": "None of the these",
+        "explanation": "All listed items can be IoT-enabled when connected and controlled via the internet."
+      },
+      {
+        "question": "The things in IoT consist of embedded systems.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "IoT devices rely on embedded systems with sensors, processors, and actuators for operation."
+      },
+      {
+        "question": "IoT is one of the technologies that enable smart farms.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "IoT enables smart farming through connected sensors and devices for real-time agricultural monitoring."
+      },
+      {
+        "question": "In M2M, it is mandatory that the interactions between the machines and devices happen through a cloud computing infrastructure.",
+        "options": ["True", "False"],
+        "answer": "False",
+        "explanation": "M2M devices can communicate directly without requiring cloud infrastructure, though it can be used optionally."
+      },
+      {
+        "question": "Sometimes, when there is a need for the nodes to communicate directly to the Internet, ………………………….. can be used.",
+        "options": ["Sensors", "Actuators", "Tunneling", "None of these"],
+        "answer": "Tunneling",
+        "explanation": "Tunneling allows IoT nodes to securely establish direct communication with the Internet."
+      },
+      {
+        "question": "In multi-homing a node/network is connected to only two networks for improved reliability.",
+        "options": ["True", "False"],
+        "answer": "False",
+        "explanation": "Multi-homing connects a node to two or more networks, not just two, to improve reliability."
+      },
+      {
+        "question": "Which of the following is/are not enablers of IoT?",
+        "options": ["Advancement in gene sequencing", "Nanotechnology", "Sensors", "RFID"],
+        "answer": "Advancement in gene sequencing",
+        "explanation": "Gene sequencing is related to biology, not IoT; enablers include sensors, RFID, and nanotechnology."
+      },
+      {
+        "question": "The decreasing number of devices in IoT is expected to result in an address crunch.",
+        "options": ["True", "False"],
+        "answer": "False",
+        "explanation": "An address crunch occurs due to an increasing, not decreasing, number of IoT devices."
+      },
+      {
+        "question": "Why IoT has become so popular?",
+        "options": ["It can provide advanced level of services to the society", "It can help reduce human effort", "It can potentially make processes more efficient", "All of these"],
+        "answer": "All of these",
+        "explanation": "IoT provides advanced services, reduces human effort, and improves efficiency across various domains."
+      },
+      {
+        "question": "The resolution of a sensor is the maximum change it can detect in the quantity that it is measuring.",
+        "options": ["False", "True"],
+        "answer": "False",
+        "explanation": "Resolution refers to the minimum change a sensor can detect; maximum change defines its range."
+      },
+      {
+        "question": "Transducer is a …………term and includes………",
+        "options": ["special, only sensors", "special, only actuators", "collective, both sensors and actuators", "None of these"],
+        "answer": "collective, both sensors and actuators",
+        "explanation": "A transducer converts one form of energy into another and includes both sensors and actuators."
+      },
+      {
+        "question": "Which of the following is/are feature/features of sensors?",
+        "options": ["It is only sensitive to the measured property.", "It acts on the surrounding environment.", "Both (a) and (b)", "None of these"],
+        "answer": "It is only sensitive to the measured property.",
+        "explanation": "Sensors should respond only to the specific property they measure; acting on the environment is for actuators."
+      },
+      {
+        "question": "Which of the following technologies have unified and has resulted in the evolution of IoT?",
+        "options": ["Low-power embedded systems", "Cloud Computing", "Machine Learning", "All of these"],
+        "answer": "All of these",
+        "explanation": "IoT evolved through the combination of low-power embedded systems, cloud computing, and machine learning."
+      },
+      {
+        "question": "What is the full form of IoT?",
+        "options": ["Internet of Tasks", "Internet of Things", "Internet of Tracks", "None of these"],
+        "answer": "Internet of Things",
+        "explanation": "IoT stands for Internet of Things, a network of connected physical devices exchanging data."
+      },
+      {
+        "question": "A sensor node is not made up of which of the following?",
+        "options": ["Sensor/Sensors", "A processing unit", "A power unit", "None of these"],
+        "answer": "None of these",
+        "explanation": "A sensor node includes sensors, a processing unit, and a power source — all listed components are correct."
+      }
+    ]
+  }
+  

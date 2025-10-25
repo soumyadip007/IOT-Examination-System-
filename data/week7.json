@@ -1,0 +1,304 @@
+{
+    "questions": [
+        {
+            "question": "Python socket programming, while defining a socket, SOCK_STREAM refers to a type of",
+            "options": [
+                "SocketFamily",
+                "SocketType",
+                "SocketName",
+                "SocketProtocol"
+            ],
+            "answer": "SocketType",
+            "explanation": "In Python socket programming, SOCK_STREAM indicates a TCP socket type, representing the communication semantics of the socket."
+        },
+        {
+            "question": "If you want to change the label of the Y-axis while plotting a graph using matplotlib in Python, what among the following functions do you use? Suppose you have imported matplotlib as plt",
+            "options": [
+                "plt.show()",
+                "plt.plot()",
+                "plt.ylabel()",
+                "plt.yaxis()"
+            ],
+            "answer": "plt.ylabel()",
+            "explanation": "plt.ylabel() is used to set the label of the Y-axis in a matplotlib plot."
+        },
+        {
+            "question": "In Socket programming, the parameter AF_INET stands for",
+            "options": [
+                "Unix protocols",
+                "Internet Protocol (IP)",
+                "File sharing",
+                "Time slicing"
+            ],
+            "answer": "Internet Protocol (IP)",
+            "explanation": "AF_INET is used to specify the address family for IPv4 Internet protocols."
+        },
+        {
+            "question": "Suppose a Python server is receiving data from a socket as follows: data, addr = sock.recvfrom(1024). What kind of socket 'sock' is being considered here?",
+            "options": [
+                "TCP socket",
+                "UDP socket",
+                "TAP socket",
+                "None of the given"
+            ],
+            "answer": "UDP socket",
+            "explanation": "recvfrom() is used for UDP sockets which are connectionless and receive data along with the sender's address."
+        },
+        {
+            "question": "What is the use of the Mobi-Flow protocol?",
+            "options": [
+                "Enabling static SDN",
+                "Enabling SDN to incorporate mobility",
+                "Enabling Odin Master",
+                "Enabling traditional BGP"
+            ],
+            "answer": "Enabling SDN to incorporate mobility",
+            "explanation": "Mobi-Flow protocol extends SDN to handle mobile clients and dynamic network topology."
+        },
+        {
+            "question": "During remote server access using socket programming what is the utility of the <socket_name>.listen() function?",
+            "options": [
+                "To create a new socket",
+                "To bind the socket to connection",
+                "To wait for clients to connect",
+                "To close the connection"
+            ],
+            "answer": "To wait for clients to connect",
+            "explanation": "listen() marks a socket as passive, ready to accept incoming connection requests from clients."
+        },
+        {
+            "question": "Which among the following is the correct direction for PACKET_OUT type messages in SDN?",
+            "options": [
+                "From controller to switch",
+                "From switch to controller",
+                "Between two switches",
+                "Between two controllers"
+            ],
+            "answer": "From controller to switch",
+            "explanation": "PACKET_OUT messages are sent by the controller to instruct switches on forwarding or handling packets."
+        },
+        {
+            "question": "Which among the following is a limitation of the traditional non-SDN networks?",
+            "options": [
+                "Switches do not possess routing table",
+                "Switches are unable to forward traffic",
+                "Switches do not have a global view of the network",
+                "All of the given"
+            ],
+            "answer": "Switches do not have a global view of the network",
+            "explanation": "In traditional networks, switches operate independently without centralized network visibility, which SDN addresses."
+        },
+        {
+            "question": "During remote server access by a Raspberry Pi, where the Raspberry Pi acts as a client, the client needs the following?",
+            "options": [
+                "Only IP address of server",
+                "Only port number",
+                "Both server IP address and port number",
+                "Client's IP address"
+            ],
+            "answer": "Both server IP address and port number",
+            "explanation": "To connect to a server, a client must know the server's IP address and the port number it is listening on."
+        },
+        {
+            "question": "With respect to the concept of soft time-out and hard time-out in SDN switches, which of the following relations hold?",
+            "options": [
+                "Soft time-out >= hard time-out",
+                "Hard time-out >= soft time-out",
+                "Soft time-out = hard time-out always",
+                "None of the given"
+            ],
+            "answer": "Hard time-out >= soft time-out",
+            "explanation": "Hard time-out defines the maximum lifetime of a flow entry, while soft time-out is a shorter interval used for dynamic expiration."
+        },
+        {
+            "question": "Which of the following is true?",
+            "options": [
+                "Traditional Network: Routing Table, Software Defined Network: Routing Table",
+                "Traditional Network: Flow Table, Software Defined Network: Routing Table",
+                "Traditional Network: Routing Table, Software Defined Network: Flow Table",
+                "Traditional Network: Flow Table, Software Defined Network: Flow Table"
+            ],
+            "answer": "Traditional Network: Routing Table, Software Defined Network: Flow Table",
+            "explanation": "Traditional networks use routing tables for packet forwarding, whereas SDN switches use flow tables controlled by the centralized controller."
+        },
+        {
+            "question": "With respect to the directional APIs in SDN, what is the functionality of East-Westbound APIs?",
+            "options": [
+                "To communicate between the controller and switches",
+                "To communicate among multiple controllers",
+                "East-Westbound APIs do not exist",
+                "To communicate between switches themselves"
+            ],
+            "answer": "To communicate among multiple controllers",
+            "explanation": "East-Westbound APIs facilitate communication between multiple SDN controllers to synchronize network state."
+        },
+        {
+            "question": "Hierarchical SDN architecture is also known as………………………. architecture.",
+            "options": [
+                "Tree",
+                "Flat",
+                "Mesh",
+                "Line"
+            ],
+            "answer": "Tree",
+            "explanation": "Hierarchical SDN architecture organizes controllers in a tree-like structure, improving scalability and control."
+        },
+        {
+            "question": "Integrating SDN with IoT is not recommended and is not a suitable approach to follow",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Integrating SDN with IoT is recommended as SDN provides centralized management and dynamic control for heterogeneous IoT networks."
+        },
+        {
+            "question": "A Raspberry Pi can read data from a sensor but cannot send it over to a remote server for further processing.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "A Raspberry Pi can both read data from sensors through its GPIO pins and send that data to a remote server using its built-in Ethernet or Wi-Fi connectivity and Python libraries like requests or socket."
+        },
+        {
+            "question": "In Python socket programming, with respect to the sock.bind(server_address) function, which among the following does the variable server_address contain?",
+            "options": [
+                "IP address of destination",
+                "Port number of destination server",
+                "Neither IP address nor port number of destination server",
+                "Both IP address and port number of destination server"
+            ],
+            "answer": "Both IP address and port number of destination server",
+            "explanation": "In sock.bind(server_address), the server_address is a tuple containing the IP address (string) and port number (integer) that the socket will bind to on the local machine."
+        },
+        {
+            "question": "In Python matplotlib, in order to display the graphical plot on a terminal, the command plt.plot() is used in conjunction with which of the following?",
+            "options": [
+                "plt.plt()",
+                "plt.show()",
+                "plt.xtics()",
+                "plt.axes()"
+            ],
+            "answer": "plt.show()",
+            "explanation": "plt.plot() creates the plot in memory, but plt.show() is required to render and display the graphical plot on the screen."
+        },
+        {
+            "question": "The following Python code displays a parabolic plot using matplotlib. Will the code plot the desired parabola?",
+            "options": [
+                "Yes",
+                "No"
+            ],
+            "answer": "No",
+            "explanation": "The code will produce an error because plt.legend() is used but no labels are defined, and plt.plot(x, y) is missing, so there is no plotted line to include in a legend."
+        },
+        {
+            "question": "With respect to Question 4, which must be added to make the code display the parabola?",
+            "options": [
+                "Nothing, the code works fine",
+                "plt.xtics() method",
+                "plt.plot() method",
+                "plt.setfigure() method"
+            ],
+            "answer": "plt.plot() method",
+            "explanation": "The code is missing plt.plot(x, y) to actually draw the parabola on the figure."
+        },
+        {
+            "question": "In Python, suppose that string text = 'It is my#birthday!I am Happy'. What will the output of the following instruction data=text.split(''); print(data[1])?",
+            "options": [
+                "It is my#birthday!I am Happy",
+                "my#birthday!I",
+                "am Happy",
+                "It is"
+            ],
+            "answer": "my#birthday!I",
+            "explanation": "text.split(' ') splits the string at each space, creating ['It', 'is', 'my#birthday!I', 'am', 'Happy']. Accessing data[2] gives 'my#birthday!I'."
+        },
+        {
+            "question": "With respect to SDN for IoT, what does 'end-devices' in the phrase 'control for end-devices' mean?",
+            "options": [
+                "SDN Controllers",
+                "SDN Switches",
+                "Sensors and Actuators",
+                "Database"
+            ],
+            "answer": "Sensors and Actuators",
+            "explanation": "'End-devices' refer to IoT devices at the edge, like sensors that collect data and actuators that perform actions."
+        },
+        {
+            "question": "A Network Operating System (NOS) resides in which of the following logical planes?",
+            "options": [
+                "Application Plane",
+                "Control Plane",
+                "Data Plane",
+                "Both Data Plane as well as Application Plane"
+            ],
+            "answer": "Control Plane",
+            "explanation": "In SDN, the NOS resides in the control plane, managing network intelligence and forwarding decisions."
+        },
+        {
+            "question": "Consider the network figure. Which of the following network topologies does this figure relate to?",
+            "options": [
+                "Ring topology",
+                "Bus topology",
+                "Mesh topology",
+                "Tree topology"
+            ],
+            "answer": "Mesh topology",
+            "explanation": "Multiple direct connections between nodes define a mesh topology."
+        },
+        {
+            "question": "With respect to the same figure, what do the blue directional dotted arrows from the controller to the switches represent?",
+            "options": [
+                "Northbound API",
+                "Southbound API",
+                "Eastbound API",
+                "Westbound API"
+            ],
+            "answer": "Southbound API",
+            "explanation": "In SDN, the controller communicates with data plane switches using the Southbound API (e.g., OpenFlow)."
+        },
+        {
+            "question": "Consider the following figure. To which issue of SDN does this figure relate?",
+            "options": [
+                "Controller placement issue",
+                "Flow Rule placement issue",
+                "Hardware placement issue",
+                "Analysis placement issue"
+            ],
+            "answer": "Flow Rule placement issue",
+            "explanation": "The figure shows an SDN flow table, highlighting the challenge of designing and placing efficient flow rules in switches."
+        },
+        {
+            "question": "Which among the following is the most suitable utility of Mininet?",
+            "options": [
+                "To act as a virtual sensor",
+                "To provide a simulation environment for SDN with OpenFlow",
+                "To act as a generic antenna simulator",
+                "To perform load testing and analysis"
+            ],
+            "answer": "To provide a simulation environment for SDN with OpenFlow",
+            "explanation": "Mininet emulates virtual SDN networks using OpenFlow, allowing testing without physical hardware."
+        },
+        {
+            "question": "Control of end devices such as sensors and actuators do not form a use-case for Software Defined IoT.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "Control of sensors and actuators is a key use-case for SD-IoT, enabling centralized and programmable management."
+        },
+        {
+            "question": "With respect to packet delivery ratio, which of the following is true?",
+            "options": [
+                "WSN outperforms Soft-WSN",
+                "Soft-WSN outperforms WSN",
+                "Neither of Soft-WSN and WSN outperform each other",
+                "No relation between Soft-WSN and WSN"
+            ],
+            "answer": "Soft-WSN outperforms WSN",
+            "explanation": "Soft-WSN (Software-Defined Wireless Sensor Networks) achieves higher packet delivery due to centralized control, dynamic routing, and efficient resource management."
+        }
+    ]
+}

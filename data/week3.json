@@ -1,0 +1,156 @@
+{
+    "questions": [
+      {
+        "question": "HART operates only in …… GHz ISM band.",
+        "options": [
+          "2.4",
+          "4.8",
+          "Both (a) and (b)",
+          "None of these"
+        ],
+        "answer": "None of these",
+        "explanation": "WirelessHART operates in the 2.4 GHz ISM band. HART itself is primarily a communication protocol using Bell 202 FSK over 4-20 mA analog wiring."
+      },
+      {
+        "question": "State whether the following statement is true or false. Statement: The HART physical layer is derived from IEEE 802.15.4 protocol and operates only in 2.5 GHz ISM band.",
+        "options": [
+          "False",
+          "True"
+        ],
+        "answer": "False",
+        "explanation": "WirelessHART uses IEEE 802.15.4 physical layer but operates specifically in the 2.4 GHz ISM band, not 2.5 GHz."
+      },
+      {
+        "question": "State whether the following statement is True or False. Statement: Each node is supervised by the application manager and it guides them on when and where to send packets.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "False",
+        "explanation": "In WirelessHART, nodes are supervised by the central Network Manager, not an application manager, which provides communication schedules."
+      },
+      {
+        "question": "……………… identifies channels consistently affected by interference and removes them from use.",
+        "options": [
+          "Channel hopping",
+          "Channel aggregating",
+          "Channel blacklisting",
+          "Frequency aggregating"
+        ],
+        "answer": "Channel blacklisting",
+        "explanation": "Channel blacklisting identifies channels with persistent interference and removes them to improve reliability."
+      },
+      {
+        "question": "State whether the following statement is true or false. Statement: The Network Manager supervises each node in the network and guides them on when and where to send packets.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "True",
+        "explanation": "The Network Manager creates communication schedules and routes, instructing each node on timing and destinations for packets."
+      },
+      {
+        "question": "Which layer of HART incorporates channel hopping and channel blacklisting?",
+        "options": [
+          "Surface Layer",
+          "Troposphere",
+          "Data Link Layer",
+          "None of these"
+        ],
+        "answer": "Data Link Layer",
+        "explanation": "The Data Link Layer incorporates channel hopping and blacklisting to enhance network reliability and security."
+      },
+      {
+        "question": "Wireless HART relies on ……….. for its communication.",
+        "options": [
+          "Star networking",
+          "Bus networking",
+          "Both (a) and (b)",
+          "None of these"
+        ],
+        "answer": "None of these",
+        "explanation": "WirelessHART uses a mesh network topology, not simple star or bus networks, allowing multi-path communication."
+      },
+      {
+        "question": "State whether the following statement is true or false. NFC devices work on the principle of magnetic introduction.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "False",
+        "explanation": "NFC devices operate on electromagnetic induction, not magnetic induction."
+      },
+      {
+        "question": "Bluetooth technology is based on Ad-hoc technology also known as ……………",
+        "options": [
+          "Ad-hoc meshnet",
+          "Ad-hoc Piconets",
+          "Ad-hoc starnet",
+          "None of these"
+        ],
+        "answer": "Ad-hoc Piconets",
+        "explanation": "Bluetooth forms small ad-hoc networks called piconets, where one master communicates with multiple slave devices."
+      },
+      {
+        "question": "State whether the following statement is true or false. Statement: Booking in Bluetooth is the process of forming a connection between two Bluetooth devices.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "False",
+        "explanation": "Forming a connection between two Bluetooth devices is called pairing or bonding, not 'booking'."
+      },
+      {
+        "question": "State whether the following statement is true or false. Statement: Class 1 Bluetooth radios are used primarily in industrial use cases and have a range of 100 meters or 300 feet.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "True",
+        "explanation": "Class 1 Bluetooth radios, with up to 100 mW power, are designed for industrial use with ranges around 100 meters."
+      },
+      {
+        "question": "Zwave uses ……………. topology.",
+        "options": [
+          "Ring",
+          "Star",
+          "Mesh",
+          "None of these"
+        ],
+        "answer": "Mesh",
+        "explanation": "Z-Wave uses a mesh network topology, allowing devices to relay data and extend network coverage."
+      },
+      {
+        "question": "Which of the following is an OS for sensor nodes?",
+        "options": [
+          "MicroOS",
+          "LiteOS",
+          "TinyOS",
+          "None of these"
+        ],
+        "answer": "TinyOS",
+        "explanation": "TinyOS is an open-source OS designed for low-power wireless embedded devices like sensor nodes."
+      },
+      {
+        "question": "State whether the following statement is true or false. Statement: Selfish nodes are typified by their unwillingness to cooperate, as the protocol requires whenever there is a personal cost involved.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "True",
+        "explanation": "Selfish nodes conserve resources like battery or bandwidth and refuse to forward packets for others."
+      },
+      {
+        "question": "Dumb behavior of sensor nodes is ………………… in nature (as it is dependent on the effects of the environmental conditions).",
+        "options": [
+          "Temporal",
+          "Spatial",
+          "Both (a) and (b)",
+          "None of these"
+        ],
+        "answer": "Temporal",
+        "explanation": "Dumb behavior refers to temporary malfunctions caused by transient environmental factors like noise or interference."
+      }
+    ]
+  }
+  

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT Exam Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .week-selector {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .week-selector label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .week-btn {
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .week-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .week-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .week-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            border-color: #ccc;
+            color: #ccc;
+        }
+
+        .week-btn.disabled:hover {
+            background: white;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 80px);
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            background: #e0e0e0;
+            height: 8px;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .question-counter {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            margin-bottom: 30px;
+        }
+
+        .question-text {
+            font-size: 20px;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .option:hover:not(.disabled) {
+            background: #e8eaf6;
+            border-color: #667eea;
+            transform: translateX(5px);
+        }
+
+        .option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+            animation: pulse 0.5s ease;
+        }
+
+        .option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+            animation: shake 0.5s ease;
+        }
+
+        .option.disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .explanation {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            display: none;
+            animation: slideDown 0.3s ease;
+        }
+
+        .explanation.show {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .explanation-title {
+            font-weight: 600;
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .explanation-text {
+            color: #856404;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .result-screen {
+            display: none;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .result-screen.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .score-number {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .score-label {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .result-details {
+            margin: 30px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .result-details p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 8px 20px rgba(108, 117, 125, 0.4);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .quiz-screen {
+            display: none;
+        }
+
+        .quiz-screen.show {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 15px;
+            }
+
+            .navbar-brand {
+                font-size: 18px;
+            }
+
+            .week-btn {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .question-text {
+                font-size: 18px;
+            }
+
+            .option {
+                padding: 15px;
+                font-size: 14px;
+            }
+
+            .score-circle {
+                width: 150px;
+                height: 150px;
+            }
+
+            .score-number {
+                font-size: 36px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">🎓 IOT Examination System</div>
+        <div class="week-selector">
+            <label>Select Week:</label>
+            <button class="week-btn" onclick="loadWeek('all')">All Weeks</button>
+            <button class="week-btn active" onclick="loadWeek(1)">Week 1</button>
+            <button class="week-btn" onclick="loadWeek(2)">Week 2</button>
+            <button class="week-btn" onclick="loadWeek(3)">Week 3</button>
+            <button class="week-btn" onclick="loadWeek(4)">Week 4</button>
+            <button class="week-btn" onclick="loadWeek(5)">Week 5</button>
+            <button class="week-btn" onclick="loadWeek(6)">Week 6</button>
+            <button class="week-btn" onclick="loadWeek(7)">Week 7</button>
+            <button class="week-btn" onclick="loadWeek(8)">Week 8</button>
+            <button class="week-btn" onclick="loadWeek(9)">Week 9</button>
+            <button class="week-btn" onclick="loadWeek(10)">Week 10</button>
+            <button class="week-btn" onclick="loadWeek(11)">Week 11</button>
+            <button class="week-btn" onclick="loadWeek(12)">Week 12</button>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <h1 id="quizTitle">🎓 IOT Examination</h1>
+                <p style="color: #666; margin-top: 10px;" id="quizSubtitle">Loading...</p>
+            </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-screen" id="quizScreen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            
+            <div class="question-counter" id="questionCounter"></div>
+            
+            <div class="question-box">
+                <div class="question-text" id="questionText"></div>
+                <div class="options" id="optionsContainer"></div>
+            </div>
+
+            <div class="explanation" id="explanation">
+                <div class="explanation-title">📝 Explanation:</div>
+                <div class="explanation-text" id="explanationText"></div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question →</button>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-screen" id="resultScreen">
+            <h2 style="color: #667eea; margin-bottom: 20px;">🎉 Quiz Completed!</h2>
+            
+            <div class="score-circle">
+                <div class="score-number" id="scorePercentage"></div>
+                <div class="score-label">Score</div>
+            </div>
+
+            <div class="result-details">
+                <p><strong>Correct Answers:</strong> <span id="correctCount" style="color: #28a745;"></span></p>
+                <p><strong>Incorrect Answers:</strong> <span id="incorrectCount" style="color: #dc3545;"></span></p>
+                <p><strong>Total Questions:</strong> <span id="totalQuestions"></span></p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn" onclick="restartQuiz()">🔄 Restart Quiz</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        // ===== DYNAMIC LOADING FROM JSON FILES =====
+        // NO HARDCODED DATA - ALL QUESTIONS LOADED FROM data/ FOLDER
+        
+        let allWeeksData = {};
+
+        // Load week data from JSON file
+        async function loadWeekData(weekNumber) {
+            try {
+                // Add timestamp to prevent caching
+                const cacheBuster = new Date().getTime();
+                const response = await fetch(`data/week${weekNumber}.json?v=${cacheBuster}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error(`Error loading week ${weekNumber}:`, error);
+                return { questions: [] };
+            }
+        }
+
+        // Load all weeks data on startup
+        async function loadAllWeeksData() {
+            const loadPromises = [];
+            for (let i = 1; i <= 12; i++) {
+                loadPromises.push(
+                    loadWeekData(i).then(data => {
+                        allWeeksData[`week${i}`] = data;
+                    })
+                );
+            }
+            await Promise.all(loadPromises);
+        }
+
+        // Quiz state
+        let currentWeek = 'week1';
+        let shuffledQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let answered = false;
+
+        // Load specific week
+        async function loadWeek(week) {
+            // Update active button
+            document.querySelectorAll('.week-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Set current week
+            if (week === 'all') {
+                currentWeek = 'all';
+                document.getElementById('quizTitle').textContent = '🎓 IOT Examination';
+                document.getElementById('quizSubtitle').textContent = 'All Weeks Combined';
+            } else {
+                currentWeek = `week${week}`;
+                document.getElementById('quizTitle').textContent = '🎓 IOT Examination';
+                document.getElementById('quizSubtitle').textContent = `Week ${week} Assessment`;
+            }
+
+            // Restart quiz with new week
+            await initQuiz();
+        }
+
+        // Get questions for current selection
+        function getCurrentQuestions() {
+            if (currentWeek === 'all') {
+                // Combine all weeks
+                let allQuestions = [];
+                for (let week in allWeeksData) {
+                    if (allWeeksData[week].questions && allWeeksData[week].questions.length > 0) {
+                        allQuestions = allQuestions.concat(allWeeksData[week].questions);
+                    }
+                }
+                return allQuestions;
+            } else {
+                return allWeeksData[currentWeek]?.questions || [];
+            }
+        }
+
+        // Shuffle array function
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Initialize quiz
+        async function initQuiz() {
+            const questions = getCurrentQuestions();
+            if (questions.length === 0) {
+                alert('No questions available for this week yet!');
+                return;
+            }
+
+            shuffledQuestions = shuffleArray(questions);
+            currentQuestionIndex = 0;
+            score = 0;
+            answered = false;
+
+            document.getElementById('quizScreen').classList.add('show');
+            document.getElementById('resultScreen').classList.remove('show');
+            document.getElementById('nextBtn').style.display = 'none';
+            
+            displayQuestion();
+        }
+
+        // Display current question
+        function displayQuestion() {
+            const question = shuffledQuestions[currentQuestionIndex];
+            answered = false;
+
+            // Update progress bar
+            const progress = ((currentQuestionIndex) / shuffledQuestions.length) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+
+            // Update question counter
+            document.getElementById('questionCounter').textContent = 
+                `Question ${currentQuestionIndex + 1} of ${shuffledQuestions.length}`;
+
+            // Display question
+            document.getElementById('questionText').textContent = question.question;
+
+            // Hide explanation and next button
+            document.getElementById('explanation').classList.remove('show');
+            document.getElementById('nextBtn').style.display = 'none';
+
+            // Display options
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+                optionDiv.textContent = option;
+                optionDiv.onclick = () => selectOption(option, optionDiv);
+                optionsContainer.appendChild(optionDiv);
+            });
+        }
+
+        // Handle option selection
+        function selectOption(selectedOption, optionElement) {
+            if (answered) return;
+
+            answered = true;
+            const question = shuffledQuestions[currentQuestionIndex];
+            const isCorrect = selectedOption === question.answer;
+
+            // Disable all options
+            const allOptions = document.querySelectorAll('.option');
+            allOptions.forEach(opt => {
+                opt.classList.add('disabled');
+                
+                // Highlight correct and incorrect answers
+                if (opt.textContent === question.answer) {
+                    opt.classList.add('correct');
+                } else if (opt === optionElement && !isCorrect) {
+                    opt.classList.add('incorrect');
+                }
+            });
+
+            // Update score
+            if (isCorrect) {
+                score++;
+            }
+
+            // Show explanation
+            document.getElementById('explanationText').textContent = question.explanation;
+            document.getElementById('explanation').classList.add('show');
+
+            // Show next button
+            const nextBtn = document.getElementById('nextBtn');
+            if (currentQuestionIndex < shuffledQuestions.length - 1) {
+                nextBtn.textContent = 'Next Question →';
+                nextBtn.style.display = 'inline-block';
+            } else {
+                nextBtn.textContent = 'Show Results →';
+                nextBtn.style.display = 'inline-block';
+            }
+        }
+
+        // Next question handler
+        function nextQuestion() {
+            if (currentQuestionIndex < shuffledQuestions.length - 1) {
+                currentQuestionIndex++;
+                displayQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        // Show final results
+        function showResults() {
+            document.getElementById('quizScreen').classList.remove('show');
+            document.getElementById('resultScreen').classList.add('show');
+
+            const percentage = Math.round((score / shuffledQuestions.length) * 100);
+            const incorrect = shuffledQuestions.length - score;
+
+            document.getElementById('scorePercentage').textContent = percentage + '%';
+            document.getElementById('correctCount').textContent = score;
+            document.getElementById('incorrectCount').textContent = incorrect;
+            document.getElementById('totalQuestions').textContent = shuffledQuestions.length;
+        }
+
+        // Restart quiz
+        async function restartQuiz() {
+            await initQuiz();
+        }
+
+        // Initialize app
+        async function initApp() {
+            // Show loading message
+            document.getElementById('quizTitle').textContent = 'Loading Questions...';
+            document.getElementById('quizSubtitle').textContent = 'Please wait while we load all week data from JSON files';
+            
+            // Load all weeks data from JSON files dynamically
+            await loadAllWeeksData();
+            
+            console.log('Loaded data for weeks:', Object.keys(allWeeksData));
+            console.log('Week 1 questions:', allWeeksData.week1?.questions?.length || 0);
+            console.log('Week 2 questions:', allWeeksData.week2?.questions?.length || 0);
+            console.log('Week 3 questions:', allWeeksData.week3?.questions?.length || 0);
+            console.log('Week 4 questions:', allWeeksData.week4?.questions?.length || 0);
+            console.log('Week 5 questions:', allWeeksData.week5?.questions?.length || 0);
+            console.log('Week 6 questions:', allWeeksData.week6?.questions?.length || 0);
+            console.log('Week 7 questions:', allWeeksData.week7?.questions?.length || 0);
+            console.log('Week 8 questions:', allWeeksData.week8?.questions?.length || 0);
+            
+            // Update UI
+            document.getElementById('quizTitle').textContent = '🎓 IOT Examination';
+            document.getElementById('quizSubtitle').textContent = 'Week 1 Assessment';
+            
+            // Start quiz with week 1
+            await initQuiz();
+        }
+
+        // Start app on page load
+        window.onload = initApp;
+    </script>
+</body>
+</html>

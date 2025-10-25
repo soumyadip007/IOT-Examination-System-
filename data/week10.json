@@ -1,0 +1,324 @@
+{
+    "questions": [
+        {
+            "question": "Which among the following are active connected entities in a holistic smart city environment?",
+            "options": [
+                "Police station",
+                "Banks",
+                "Transport centers",
+                "All of the above"
+            ],
+            "answer": "All of the above",
+            "explanation": "In a smart city, multiple entities such as police stations, banks, and transport centers are connected and integrated through IoT and ICT systems to improve efficiency and service delivery."
+        },
+        {
+            "question": "With the help of ICT tools, it is possible to increase and improve citizen participation for a good governance based smart city.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "explanation": "ICT tools facilitate citizen engagement through e-governance platforms, mobile apps, and feedback systems, improving participation in decision-making and governance."
+        },
+        {
+            "question": "Which among the following is a possible challenge with respect to smart parking lots?",
+            "options": [
+                "Efficient auto-routing of vehicles",
+                "Locating current vacant spots",
+                "Auto-charging of vehicles",
+                "All of the given"
+            ],
+            "answer": "All of the given",
+            "explanation": "Smart parking involves challenges such as automatically routing vehicles, detecting vacant spots, and managing charging facilities for electric vehicles."
+        },
+        {
+            "question": "What refers to combining information from multiple sensor sources?",
+            "options": [
+                "Information Collection",
+                "Multi-sensor deployment",
+                "Multi-sensor dissemination",
+                "Multi-sensor data fusion"
+            ],
+            "answer": "Multi-sensor data fusion",
+            "explanation": "Multi-sensor data fusion refers to integrating data from multiple sensors to improve accuracy, reduce redundancy, and provide a comprehensive understanding of the environment."
+        },
+        {
+            "question": "Which of the following is one of the theory of evidence-based mathematical methods of data fusion?",
+            "options": [
+                "Belief function",
+                "Bayesian analysis",
+                "ANN",
+                "None of these"
+            ],
+            "answer": "Belief function",
+            "explanation": "Belief functions are part of Dempster-Shafer theory, a mathematical framework used in data fusion to combine evidence from different sources."
+        },
+        {
+            "question": "With respect to data fusion from multiple IoT sensors, does outlier data present a challenge?",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "answer": "Yes",
+            "explanation": "Outlier data can skew the results of sensor fusion, leading to incorrect conclusions or decisions, hence it is a key challenge in IoT data processing."
+        },
+        {
+            "question": "Which of the following is a phase of ICV development?",
+            "options": [
+                "Based on 2G",
+                "Based on 4G LTE",
+                "Vehicles connected to cloud",
+                "All of these"
+            ],
+            "answer": "All of these",
+            "explanation": "ICV development progressed from early communication technologies like 2G, to 4G LTE connectivity, and finally to cloud-connected vehicles enabling real-time data sharing and coordination."
+        },
+        {
+            "question": "With which of the following can the decision-making gap between the sensors and the actuators be bridged?",
+            "options": [
+                "SDN",
+                "OpenStack Horizon",
+                "Artificial Intelligence (AI)",
+                "Arduino IDE"
+            ],
+            "answer": "Artificial Intelligence (AI)",
+            "explanation": "AI algorithms can process sensor data and make decisions that are then sent to actuators, bridging the gap between sensing and action in automated systems."
+        },
+        {
+            "question": "Which of the following statements are true about the HAN standards? Statement I: Physical and MAC layers are defined by IEEE802.15.4. Statement II: Network layer is defined by Zigbee. Statement III: Application layer is defined by IEEE802.15.4",
+            "options": [
+                "Statements I and II",
+                "Statements I and III",
+                "Statements II and III",
+                "Statements I, II and III"
+            ],
+            "answer": "Statements I and II",
+            "explanation": "In HAN standards, IEEE802.15.4 defines the physical and MAC layers, while Zigbee defines the network layer. The application layer is defined by Zigbee protocols, not IEEE802.15.4."
+        },
+        {
+            "question": "What is UPnP?",
+            "options": [
+                "Uninterrupted Post-messaging",
+                "Universal Pull Streaming",
+                "Universal Plug and Play",
+                "Unhindered Public Networking"
+            ],
+            "answer": "Universal Plug and Play",
+            "explanation": "UPnP (Universal Plug and Play) is a set of networking protocols that allows devices to discover each other and establish functional network services for data sharing and communication."
+        },
+        {
+            "question": "What are the disadvantages of V2X communication?",
+            "options": [
+                "Increased traffic safety",
+                "Tracking of movement",
+                "Efficient use of fuel",
+                "None of these"
+            ],
+            "answer": "Tracking of movement",
+            "explanation": "A disadvantage of V2X communication is the potential for privacy invasion due to tracking vehicle movements."
+        },
+        {
+            "question": "Mobility of vehicles in a V2X environment limits which of the following that restricts the use of TCP/IP for V2X communication?",
+            "options": [
+                "Communication between vehicular infrastructure",
+                "Localization of data",
+                "Backbone routing in IP core networks",
+                "Human-vehicle interaction"
+            ],
+            "answer": "Localization of data",
+            "explanation": "High mobility causes frequent changes in network topology, making traditional TCP/IP less suitable due to challenges in data localization and routing stability."
+        },
+        {
+            "question": "In VANET, link durations are long and easily scaled-up to include all the vehicles on the road?",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "explanation": "In VANETs, link durations are typically short due to high mobility, and scaling the network to include all vehicles is challenging."
+        },
+        {
+            "question": "CCN is derived from ICN architecture.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "explanation": "Content-Centric Networking (CCN) is derived from Information-Centric Networking (ICN) architecture, focusing on content rather than host-based communication."
+        },
+        {
+            "question": "In an ICV environment, efficient cooperation between different vehicles on a highway can lead to a safer scenario with respect to collision and avoiding incoming traffic.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "explanation": "Cooperative strategies among ICVs (e.g., sharing sensor data and maneuvering intentions) can significantly reduce collisions and improve traffic flow."
+        },
+        {
+            "question": "DLNA (used in HAN standards) expands to:",
+            "options": [
+                "Digital Lifestyle Network Alliance",
+                "Digital Living Network Alliance",
+                "Digital Lifestyle Network Algorithm",
+                "None of these"
+            ],
+            "answer": "Digital Living Network Alliance",
+            "explanation": "DLNA stands for Digital Living Network Alliance, a standard that allows compatible devices to share media (photos, videos, music) over a home network seamlessly."
+        },
+        {
+            "question": "Which property best characterizes V2X?",
+            "options": [
+                "Restricted to a single source",
+                "Distributed architecture",
+                "Both a and b",
+                "Neither a nor b"
+            ],
+            "answer": "Distributed architecture",
+            "explanation": "V2X (Vehicle-to-Everything) communication is inherently distributed, enabling vehicles to interact dynamically with other vehicles, infrastructure, pedestrians, and networks without relying on a single centralized source."
+        },
+        {
+            "question": "Which set correctly captures smart-home functionality?",
+            "options": [
+                "Health monitoring only",
+                "Security only",
+                "Both health monitoring and security",
+                "Neither"
+            ],
+            "answer": "Both health monitoring and security",
+            "explanation": "Smart-home functionality includes health monitoring (e.g., fall detection, vital signs) and security (e.g., intrusion alerts, surveillance), among other automation features."
+        },
+        {
+            "question": "Which are valid types of sensing?",
+            "options": [
+                "Stationary",
+                "Mobile",
+                "Both a and b",
+                "None of these"
+            ],
+            "answer": "Both a and b",
+            "explanation": "Valid types of sensing include stationary (fixed sensors in one location) and mobile (sensors on moving objects or people), covering diverse data collection scenarios in IoT."
+        },
+        {
+            "question": "Which layers are part of the Zigbee stack?",
+            "options": [
+                "Physical and transport",
+                "MAC and transport",
+                "Network and MAC",
+                "Transport and MAC"
+            ],
+            "answer": "Network and MAC",
+            "explanation": "The Zigbee stack includes the Network layer (for routing, formation) and the MAC layer (Media Access Control), built on the IEEE 802.15.4 standard's PHY and MAC layers."
+        },
+        {
+            "question": "Smart parking primarily reduces traffic............",
+            "options": [
+                "mobility",
+                "area",
+                "analysis",
+                "congestion"
+            ],
+            "answer": "congestion",
+            "explanation": "Smart parking systems guide drivers to available spots, reducing time spent circling and searching, which directly lowers traffic congestion in urban areas."
+        },
+        {
+            "question": "About Home Area Network (HAN), consider: I) Multi-protocol gateway bridges non-IP to IP. II) Wired HAN is low cost. III) Wireless HAN makes implementation easy. Which of these is correct?",
+            "options": [
+                "Only I",
+                "I and II only",
+                "I and III only",
+                "I, II, and III"
+            ],
+            "answer": "I, II, and III",
+            "explanation": "A multi-protocol gateway bridges non-IP and IP devices, enabling communication in HANs. Wired HANs using existing power lines are often low-cost and reliable. Wireless HANs eliminate cabling, simplifying installation and expansion."
+        },
+        {
+            "question": "Which statements about smart health are true? I) Low-cost and portable II) Allows remote check-ups and diagnosis III) Effortless health monitoring",
+            "options": [
+                "I only",
+                "II only",
+                "I, II, and III",
+                "None of these"
+            ],
+            "answer": "I, II, and III",
+            "explanation": "Smart health devices are low-cost and portable, allow remote check-ups and diagnosis, and provide effortless health monitoring through continuous, automated tracking."
+        },
+        {
+            "question": "Phases of Intelligent Connected Vehicle (ICV) development include:",
+            "options": [
+                "Based on 2G",
+                "Based on 4G LTE",
+                "Both a and b",
+                "None of these"
+            ],
+            "answer": "Both a and b",
+            "explanation": "ICV development phases include early stages based on 2G for basic telematics and later stages based on 4G LTE for high-speed data, V2X communication, and advanced connectivity features."
+        },
+        {
+            "question": "In the Ad-hoc domain of VANET, vehicles are:",
+            "options": [
+                "Stationary",
+                "Mobile",
+                "Fixed to RSUs only",
+                "None of these"
+            ],
+            "answer": "Mobile",
+            "explanation": "In VANET's ad-hoc domain (V2V), vehicles communicate directly with each other while in motion, forming dynamic, self-organizing networks without relying on fixed infrastructure."
+        },
+        {
+            "question": "Domains of VANET include:",
+            "options": [
+                "In-vehicle and ad-hoc",
+                "Ad-hoc and data center",
+                "Data center",
+                "None of these"
+            ],
+            "answer": "In-vehicle and ad-hoc",
+            "explanation": "VANET domains include the in-vehicle domain (communication within the vehicle) and the ad-hoc domain (vehicle-to-vehicle and vehicle-to-infrastructure communication)."
+        },
+        {
+            "question": "At which data fusion stage are multiple classifier outputs combined?",
+            "options": [
+                "Pixel level",
+                "Feature level",
+                "Signal level",
+                "Decision level"
+            ],
+            "answer": "Decision level",
+            "explanation": "At the decision level of data fusion, outputs from multiple classifiers or sensors are combined (e.g., by voting or Bayesian methods) to reach a final, robust decision."
+        },
+        {
+            "question": "The Body & Brain Architecture consists of how many layers?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "3",
+            "explanation": "The Body & Brain Architecture has three layers: Body (sensors/actuators), Nervous System (data transport network), and Brain (cloud/edge intelligence). Each layer handles a distinct function—sensing, communication, and processing."
+        },
+        {
+            "question": "Which statement about smart home infrastructure is correct?",
+            "options": [
+                "It cannot include wireless devices.",
+                "It may include wired and/or wireless devices.",
+                "It must be wireless-only.",
+                "None of these"
+            ],
+            "answer": "It may include wired and/or wireless devices.",
+            "explanation": "Smart home infrastructure integrates both wired (e.g., Ethernet, powerline) and wireless (e.g., Wi-Fi, Zigbee) devices to create a robust, adaptable network tailored to user needs."
+        },
+        {
+            "question": "Intelligent Connected Vehicles (ICV) communication is based on:",
+            "options": [
+                "Dedicated Short Range Communication",
+                "Directed Short Range Communication",
+                "Dedicated Small Range Communication",
+                "All of these"
+            ],
+            "answer": "Dedicated Short Range Communication",
+            "explanation": "ICV communication relies on DSRC (Dedicated Short Range Communication), a wireless standard enabling low-latency V2V and V2I data exchange for safety and traffic efficiency."
+        }
+    ]
+}
