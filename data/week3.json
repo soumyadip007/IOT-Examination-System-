@@ -150,6 +150,96 @@
         ],
         "answer": "Temporal",
         "explanation": "Dumb behavior refers to temporary malfunctions caused by transient environmental factors like noise or interference."
+      },
+      {
+        "question": "State True or False. Statement: \"WirelessHART is the latest release of Highway Addressable Remote Transducer protocol.\"",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "WirelessHART is an extension of the HART protocol that adds wireless communication capabilities for field devices while maintaining compatibility with existing HART systems."
+      },
+      {
+        "question": "State True or False. Statement: \"Wired HART has a network layer.\"",
+        "options": ["True", "False"],
+        "answer": "False",
+        "explanation": "Wired HART primarily operates at the physical and data link layers for point-to-point communication. It does not implement a separate network layer."
+      },
+      {
+        "question": "State True or False. \"WirelessHART physical layer is derived from 802.15.2 protocol\"",
+        "options": ["False", "True"],
+        "answer": "False",
+        "explanation": "WirelessHART physical layer is based on IEEE 802.15.4, not 802.15.2. This allows low-power wireless communication suitable for industrial automation."
+      },
+      {
+        "question": "WirelessHART operates only in ________ GHz ISM band.",
+        "options": ["3.7", "4.8", "4.8", "2.4"],
+        "answer": "2.4",
+        "explanation": "WirelessHART operates in the globally available 2.4 GHz ISM band, providing interoperability and low-power wireless communication for industrial devices."
+      },
+      {
+        "question": "HART standard was developed from ..................... smart field devices.",
+        "options": ["amplified", "diminished", "isolated", "networked"],
+        "answer": "networked",
+        "explanation": "The HART protocol was developed to enable communication with networked smart field devices, allowing both analog and digital data exchange over the same wires."
+      },
+      {
+        "question": "Main difference between wired and unwired versions is in the physical, data link, and............/ layers.",
+        "options": ["Data link", "Network", "Transport", "None of these"],
+        "answer": "Network",
+        "explanation": "WirelessHART introduces network layer features (e.g., routing, scheduling) in addition to physical and data link layers, which are handled differently than in wired HART."
+      },
+      {
+        "question": "State true or false: \"Collision free and deterministic communication is achieved in HART's data link layer.\"",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "HART’s data link layer uses Time Division Multiple Access (TDMA) and scheduling techniques to provide collision-free and deterministic communication."
+      },
+      {
+        "question": "Channel hopping is incorporated in which layer of HART?",
+        "options": ["Data link layer", "Physical layer", "Application layer", "Transport layer"],
+        "answer": "Physical layer",
+        "explanation": "WirelessHART implements channel hopping at the physical layer to reduce interference, improve reliability, and ensure robust communication in industrial environments."
+      },
+      {
+        "question": "State True or False. \"The HART application layer is responsible for extracting commands from a message, executing it and generating responses.\"",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "The application layer in HART handles the interpretation of commands, execution, and response generation, enabling meaningful communication with field devices."
+      },
+      {
+        "question": "NFC is designed for use by devices within ________ to each other.",
+        "options": ["Anywhere on the globe", "A small building", "Both (a) and (b)", "None of these"],
+        "answer": "A small building",
+        "explanation": "NFC (Near Field Communication) is designed for short-range communication, typically within a few centimeters, making it ideal for devices in close proximity."
+      },
+      {
+        "question": "Passive NFC devices ....................information which is.................. by other devices.",
+        "options": ["contain, read", "read, contain", "contain, contain", "None of these"],
+        "answer": "contain, read",
+        "explanation": "Passive NFC devices store (contain) information which can be read by active NFC devices. They do not generate their own RF signal."
+      },
+      {
+        "question": "State True or False. \"NFC devices work on the principle of magnetic induction.\"",
+        "options": ["True", "False"],
+        "answer": "True",
+        "explanation": "NFC communication uses magnetic induction between two loop antennas to transfer data over very short distances."
+      },
+      {
+        "question": "Bluetooth technology is based on ...........................",
+        "options": ["HART", "ZigBee", "All of these", "None of these"],
+        "answer": "None of these",
+        "explanation": "Bluetooth is a separate wireless communication standard based on IEEE 802.15.1, not on HART or ZigBee."
+      },
+      {
+        "question": "The Link Manager Protocol in Bluetooth manages the only establishment and authentication.",
+        "options": ["True", "False"],
+        "answer": "False",
+        "explanation": "The Link Manager Protocol (LMP) in Bluetooth handles link setup, authentication, encryption, and control of logical links, not just establishment and authentication."
+      },
+      {
+        "question": "Zigbee commonly uses.................. data rate.",
+        "options": ["260 bps", "260 kbps", "260 Mbps", "None of these"],
+        "answer": "260 kbps",
+        "explanation": "Zigbee is designed for low-power, low-data-rate wireless networks and commonly uses 250 kbps at the 2.4 GHz band. The closest option here is 260 kbps."
       }
     ]
   }

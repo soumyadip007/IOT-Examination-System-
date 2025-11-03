@@ -83,18 +83,110 @@
 
         .main-content {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             min-height: calc(100vh - 80px);
             padding: 20px;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .question-navigator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            width: 180px;
+            min-width: 180px;
+            position: sticky;
+            top: 100px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        .question-navigator::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .question-navigator::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .question-navigator::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 10px;
+        }
+
+        .question-navigator::-webkit-scrollbar-thumb:hover {
+            background: #5568d3;
+        }
+
+        .nav-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+        }
+
+        .nav-btn {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover {
+            background: #e8eaf6;
+            border-color: #667eea;
+        }
+
+        .nav-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .nav-btn.answered {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .nav-btn.correct {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .nav-btn.incorrect {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
         }
 
         .container {
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            width: 100%;
+            flex: 1;
+            max-width: 900px;
             padding: 40px;
             animation: fadeIn 0.5s ease-in;
         }
@@ -336,12 +428,75 @@
             margin-top: 30px;
         }
 
+        .navigation-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .wrong-answers {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .wrong-answer-item {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .wrong-q-number {
+            font-weight: 600;
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .wrong-q-text {
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .wrong-answer-detail {
+            margin: 8px 0;
+            color: #666;
+        }
+
+        .your-answer {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        .correct-answer {
+            color: #28a745;
+            font-weight: 600;
+        }
+
         .quiz-screen {
             display: none;
         }
 
         .quiz-screen.show {
             display: block;
+        }
+
+        @media (max-width: 900px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .question-navigator {
+                width: 100%;
+                position: relative;
+                top: 0;
+            }
+
+            .nav-grid {
+                grid-template-columns: repeat(8, 1fr);
+            }
         }
 
         @media (max-width: 600px) {
@@ -384,12 +539,16 @@
                 font-size: 36px;
             }
 
-            .button-group {
+            .button-group, .navigation-buttons {
                 flex-direction: column;
             }
 
             .btn {
                 width: 100%;
+            }
+
+            .nav-grid {
+                grid-template-columns: repeat(6, 1fr);
             }
         }
     </style>
@@ -417,6 +576,12 @@
     </nav>
 
     <div class="main-content">
+        <!-- Question Navigator -->
+        <div class="question-navigator" id="questionNavigator">
+            <div class="nav-title">Questions</div>
+            <div class="nav-grid" id="navGrid"></div>
+        </div>
+
         <div class="container">
             <div class="header">
                 <h1 id="quizTitle">🎓 IOT Examination</h1>
@@ -441,7 +606,8 @@
                 <div class="explanation-text" id="explanationText"></div>
             </div>
 
-            <div class="button-group">
+            <div class="navigation-buttons">
+                <button class="btn btn-secondary" id="backBtn" onclick="previousQuestion()" style="display: none;">← Back</button>
                 <button class="btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question →</button>
             </div>
         </div>
@@ -460,6 +626,8 @@
                 <p><strong>Incorrect Answers:</strong> <span id="incorrectCount" style="color: #dc3545;"></span></p>
                 <p><strong>Total Questions:</strong> <span id="totalQuestions"></span></p>
             </div>
+
+            <div class="wrong-answers" id="wrongAnswers"></div>
 
             <div class="button-group">
                 <button class="btn" onclick="restartQuiz()">🔄 Restart Quiz</button>
@@ -510,6 +678,8 @@
         let currentQuestionIndex = 0;
         let score = 0;
         let answered = false;
+        let userAnswers = []; // Track user answers for each question
+        let questionResults = []; // Track correct/incorrect for each question
 
         // Load specific week
         async function loadWeek(week) {
@@ -572,18 +742,60 @@
             currentQuestionIndex = 0;
             score = 0;
             answered = false;
+            userAnswers = new Array(shuffledQuestions.length).fill(null);
+            questionResults = new Array(shuffledQuestions.length).fill(null);
 
             document.getElementById('quizScreen').classList.add('show');
             document.getElementById('resultScreen').classList.remove('show');
             document.getElementById('nextBtn').style.display = 'none';
+            document.getElementById('backBtn').style.display = 'none';
+            document.getElementById('questionNavigator').style.display = 'block';
             
+            createQuestionNavigator();
+            displayQuestion();
+        }
+
+        // Create question navigator
+        function createQuestionNavigator() {
+            const navGrid = document.getElementById('navGrid');
+            navGrid.innerHTML = '';
+            
+            for (let i = 0; i < shuffledQuestions.length; i++) {
+                const navBtn = document.createElement('button');
+                navBtn.className = 'nav-btn';
+                navBtn.textContent = i + 1;
+                navBtn.onclick = () => jumpToQuestion(i);
+                navGrid.appendChild(navBtn);
+            }
+            updateNavigator();
+        }
+
+        // Update navigator colors
+        function updateNavigator() {
+            const navBtns = document.querySelectorAll('.nav-btn');
+            navBtns.forEach((btn, index) => {
+                btn.classList.remove('active', 'answered', 'correct', 'incorrect');
+                
+                if (index === currentQuestionIndex) {
+                    btn.classList.add('active');
+                } else if (questionResults[index] !== null) {
+                    btn.classList.add(questionResults[index] ? 'correct' : 'incorrect');
+                } else if (userAnswers[index] !== null) {
+                    btn.classList.add('answered');
+                }
+            });
+        }
+
+        // Jump to specific question
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
             displayQuestion();
         }
 
         // Display current question
         function displayQuestion() {
             const question = shuffledQuestions[currentQuestionIndex];
-            answered = false;
+            answered = userAnswers[currentQuestionIndex] !== null;
 
             // Update progress bar
             const progress = ((currentQuestionIndex) / shuffledQuestions.length) * 100;
@@ -596,9 +808,8 @@
             // Display question
             document.getElementById('questionText').textContent = question.question;
 
-            // Hide explanation and next button
-            document.getElementById('explanation').classList.remove('show');
-            document.getElementById('nextBtn').style.display = 'none';
+            // Show/hide back button
+            document.getElementById('backBtn').style.display = currentQuestionIndex > 0 ? 'inline-block' : 'none';
 
             // Display options
             const optionsContainer = document.getElementById('optionsContainer');
@@ -608,9 +819,49 @@
                 const optionDiv = document.createElement('div');
                 optionDiv.className = 'option';
                 optionDiv.textContent = option;
-                optionDiv.onclick = () => selectOption(option, optionDiv);
+                
+                // If already answered, show the result
+                if (answered) {
+                    optionDiv.classList.add('disabled');
+                    if (option === question.answer) {
+                        optionDiv.classList.add('correct');
+                    } else if (option === userAnswers[currentQuestionIndex]) {
+                        optionDiv.classList.add('incorrect');
+                    }
+                } else {
+                    optionDiv.onclick = () => selectOption(option, optionDiv);
+                }
+                
                 optionsContainer.appendChild(optionDiv);
             });
+
+            // Show/hide explanation
+            if (answered) {
+                document.getElementById('explanationText').textContent = question.explanation;
+                document.getElementById('explanation').classList.add('show');
+                
+                const nextBtn = document.getElementById('nextBtn');
+                if (currentQuestionIndex < shuffledQuestions.length - 1) {
+                    nextBtn.textContent = 'Next Question →';
+                    nextBtn.style.display = 'inline-block';
+                } else {
+                    nextBtn.textContent = 'Show Results →';
+                    nextBtn.style.display = 'inline-block';
+                }
+            } else {
+                document.getElementById('explanation').classList.remove('show');
+                document.getElementById('nextBtn').style.display = 'none';
+            }
+
+            updateNavigator();
+        }
+
+        // Previous question handler
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                displayQuestion();
+            }
         }
 
         // Handle option selection
@@ -620,6 +871,10 @@
             answered = true;
             const question = shuffledQuestions[currentQuestionIndex];
             const isCorrect = selectedOption === question.answer;
+
+            // Store user answer and result
+            userAnswers[currentQuestionIndex] = selectedOption;
+            questionResults[currentQuestionIndex] = isCorrect;
 
             // Disable all options
             const allOptions = document.querySelectorAll('.option');
@@ -652,6 +907,8 @@
                 nextBtn.textContent = 'Show Results →';
                 nextBtn.style.display = 'inline-block';
             }
+
+            updateNavigator();
         }
 
         // Next question handler
@@ -668,6 +925,7 @@
         function showResults() {
             document.getElementById('quizScreen').classList.remove('show');
             document.getElementById('resultScreen').classList.add('show');
+            document.getElementById('questionNavigator').style.display = 'none';
 
             const percentage = Math.round((score / shuffledQuestions.length) * 100);
             const incorrect = shuffledQuestions.length - score;
@@ -676,6 +934,58 @@
             document.getElementById('correctCount').textContent = score;
             document.getElementById('incorrectCount').textContent = incorrect;
             document.getElementById('totalQuestions').textContent = shuffledQuestions.length;
+
+            // Display wrong answers
+            displayWrongAnswers();
+        }
+
+        // Display wrong answers section
+        function displayWrongAnswers() {
+            const wrongAnswersContainer = document.getElementById('wrongAnswers');
+            wrongAnswersContainer.innerHTML = '';
+
+            const wrongQuestions = [];
+            questionResults.forEach((isCorrect, index) => {
+                if (!isCorrect) {
+                    wrongQuestions.push({
+                        index: index,
+                        question: shuffledQuestions[index],
+                        userAnswer: userAnswers[index]
+                    });
+                }
+            });
+
+            if (wrongQuestions.length === 0) {
+                wrongAnswersContainer.innerHTML = '<h3 style="color: #28a745; text-align: center;">🎉 Perfect Score! No wrong answers!</h3>';
+                return;
+            }
+
+            const title = document.createElement('h3');
+            title.style.color = '#856404';
+            title.style.marginBottom = '20px';
+            title.textContent = `❌ Wrong Answers (${wrongQuestions.length})`;
+            wrongAnswersContainer.appendChild(title);
+
+            wrongQuestions.forEach((item, idx) => {
+                const wrongItem = document.createElement('div');
+                wrongItem.className = 'wrong-answer-item';
+
+                wrongItem.innerHTML = `
+                    <div class="wrong-q-number">Question ${item.index + 1}</div>
+                    <div class="wrong-q-text">${item.question.question}</div>
+                    <div class="wrong-answer-detail">
+                        <span class="your-answer">Your Answer:</span> ${item.userAnswer}
+                    </div>
+                    <div class="wrong-answer-detail">
+                        <span class="correct-answer">Correct Answer:</span> ${item.question.answer}
+                    </div>
+                    <div class="wrong-answer-detail" style="margin-top: 10px; font-style: italic;">
+                        💡 ${item.question.explanation}
+                    </div>
+                `;
+
+                wrongAnswersContainer.appendChild(wrongItem);
+            });
         }
 
         // Restart quiz

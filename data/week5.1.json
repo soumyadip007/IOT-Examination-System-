@@ -80,10 +80,10 @@
       "options": [
         "Hello World",
         "helloworld",
-        "HELLOWORLD",
+        "HELLO WORLD",
         "WORLDHELLO"
       ],
-      "answer": "HELLOWORLD",
+      "answer": "HELLO WORLD",
       "explanation": "The .ToUpperCase() function in Arduino converts all characters in the String to uppercase. Applying it to \"Hello World\" removes the space and capitalizes every letter, resulting in \"HELLOWORLD\"."
     },
     {
@@ -158,6 +158,155 @@
       ],
       "answer": "Both Board and Serial Port",
       "explanation": "Before uploading, you must select the correct Board (e.g., Arduino Uno) from the Tools > Board menu and the right Serial Port (e.g., COM3) from Tools > Port to ensure the IDE communicates with the proper device."
+    },
+    {
+      "question": "State whether the following statement is true or false. Statement: In \"AID\", a set of sensor nodes are deployed over an agricultural field.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "In Agricultural Intelligent Devices (AID), sensor nodes are deployed across fields to monitor soil, crops, and environmental parameters, enabling precision agriculture."
+    },
+    {
+      "question": "State whether the following statement is true or false. Statement: Ultrasonic sensor senses the distance at which an object is located.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Ultrasonic sensors emit sound waves and measure the time taken for the echo to return, allowing them to accurately sense distances to objects."
+    },
+    {
+      "question": "State whether the following statement is true or false. In case of static sensors, where to deploy and/or activate sensors in WSN is a coverage problem.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "In static Wireless Sensor Networks (WSN), coverage problems involve determining optimal placement of fixed sensors to monitor the target area effectively."
+    },
+    {
+      "question": "State whether the following statement is true or false. Statement: Objective of coverage in WSN is to use maximum number of sensors and minimize network lifetime.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "The goal of coverage in WSN is to use the **minimum number of sensors** to cover an area while **maximizing network lifetime**, not the opposite."
+    },
+    {
+      "question": "State whether the following statement is true or false. Statement: \"A crossing is covered if it is in the interior of at least one node's coverage disk.\"",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "In WSN, a crossing (point or location) is considered covered if it falls within the sensing range (coverage disk) of at least one sensor node."
+    },
+    {
+      "question": "State which of the following is/are correct for stationary wireless sensor networks.",
+      "options": [
+        "Topology cannot be changed automatically",
+        "Node failure may result in partition of networks",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      "answer": "Both (a) and (b)",
+      "explanation": "In stationary WSNs, nodes do not move automatically, and failure of key nodes can partition the network, disrupting communication."
+    },
+    {
+      "question": "Most problems in static WSN can be classified as -",
+      "options": [
+        "No coverage",
+        "More coverage",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      "answer": "Both (a) and (b)",
+      "explanation": "Static WSN problems include both insufficient coverage (unmonitored areas) and excessive coverage (redundancy and energy wastage)."
+    },
+    {
+      "question": "Which of the following is/are correct with respect to UAV networks?",
+      "options": [
+        "Multi-tasking",
+        "Large coverage area",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      "answer": "Both (a) and (b)",
+      "explanation": "UAV networks can perform multiple tasks simultaneously (multi-tasking) and cover large areas due to mobility and aerial deployment."
+    },
+    {
+      "question": "State True or False. Statement: UAV networks are scalable.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "UAV networks can easily scale by adding more UAVs to cover larger areas or perform additional tasks without major infrastructure changes."
+    },
+    {
+      "question": "In Mobile WSN, the Data Mules",
+      "options": [
+        "Collect the data from sensor nodes",
+        "Goes to the sink and delivers the collected data",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "answer": "Both (a) and (b)",
+      "explanation": "Data Mules are mobile entities that collect data from sensor nodes and deliver it to the sink, enabling data collection in sparse or disconnected networks."
+    },
+    {
+      "question": "The full form of AUV is -",
+      "options": [
+        "Antenna Used Vehicle",
+        "Autonomous Underwater Vehicle",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "answer": "Autonomous Underwater Vehicle",
+      "explanation": "AUVs are robotic vehicles that operate underwater autonomously for monitoring, exploration, and data collection without direct human control."
+    },
+    {
+      "question": "Humans carry their devices and move around. Sensors embedded within the devices record readings. Sensory readings are then transmitted for processing. This paradigm of sensing is known as",
+      "options": [
+        "Machine Centric Sensing",
+        "Device Centric Sensing",
+        "Human Centric Sensing",
+        "None of these"
+      ],
+      "answer": "Human Centric Sensing",
+      "explanation": "Human Centric Sensing involves collecting data from devices carried by humans (like smartphones or wearables), capturing contextual and behavioral information."
+    },
+    {
+      "question": "State True or False. Energy of Devices and Participant selection are not two major problems in Human Centric Sensing.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "In Human Centric Sensing, managing device energy (battery life) and selecting appropriate participants are indeed major challenges, as they affect data quality and network longevity."
+    },
+    {
+      "question": "Which of the following network topologies is used in UAV networks?",
+      "options": [
+        "Bus",
+        "Star",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "answer": "Star",
+      "explanation": "UAV networks commonly use star topology where UAVs communicate with a central controller or ground station, allowing efficient coordination and data collection."
+    },
+    {
+      "question": "State true or false. The M2M Application Platform provides integrated services based on device collected data-sets.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "M2M (Machine-to-Machine) Application Platforms process data collected from devices to provide integrated services such as monitoring, analytics, and automated decision-making."
     }
   ]
 }

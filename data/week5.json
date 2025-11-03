@@ -13,7 +13,10 @@
     },
     {
       "question": "State True or False. Statement: \"Interoperability is not a characteristic of a product or system.\"",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": "False",
       "explanation": "Interoperability is indeed a characteristic of a system or product, referring to its ability to work seamlessly with other systems."
     },
@@ -30,13 +33,19 @@
     },
     {
       "question": "State whether the following statement is true or false: \"Use of different programming languages such as JavaScript, Python, JAVA, and others is an example of heterogeneity in IoT. This brings in the need for interoperability.\"",
-      "options": ["False", "True"],
+      "options": [
+        "False",
+        "True"
+      ],
       "answer": "True",
       "explanation": "Heterogeneity in programming languages necessitates interoperability to enable seamless communication and integration of devices."
     },
     {
       "question": "State True or False. Statement: \"The interoperability between devices and device users in terms of message formats is called Systematic Interoperability.\"",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": "False",
       "explanation": "This is not called Systematic Interoperability; message format compatibility is one aspect of general interoperability."
     },
@@ -53,19 +62,30 @@
     },
     {
       "question": "State true or false: Arduino is an open-source electronic programmable board.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": "True",
       "explanation": "Arduino boards are open-source hardware and software platforms, allowing anyone to study, modify, and distribute designs."
     },
     {
       "question": "State true or false: Additional electronic circuits are essential to load a program into the Arduino controller board.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": "False",
       "explanation": "Programs can be loaded directly via USB using the Arduino IDE; additional circuits are not required for programming."
     },
     {
       "question": "Arduino UNO has …………. number of Digital I/O pins.",
-      "options": ["8", "13", "14", "None of these"],
+      "options": [
+        "8",
+        "13",
+        "14",
+        "None of these"
+      ],
       "answer": "14",
       "explanation": "Arduino UNO has 14 digital input/output pins, which can be used for reading sensors or controlling actuators."
     },
@@ -82,7 +102,12 @@
     },
     {
       "question": "How many types of loops will you find in Arduino Programming?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "answer": "3",
       "explanation": "Arduino programming supports for loops, while loops, and do-while loops, making a total of 3 primary loop types."
     },
@@ -110,15 +135,184 @@
     },
     {
       "question": "What function is used to read the humidity value from the DHT sensor?",
-      "options": ["dht.getHumidity();", "dht.readTemp();", "dht.readHumidity();", "dht.getTemperature();"],
+      "options": [
+        "dht.getHumidity();",
+        "dht.readTemp();",
+        "dht.readHumidity();",
+        "dht.getTemperature();"
+      ],
       "answer": "dht.readHumidity();",
       "explanation": "dht.readHumidity() returns the humidity value read from the DHT sensor."
     },
     {
       "question": "What function is used to set the servo motor to a specific angle?",
-      "options": ["ServoDemo.move()", "ServoDemo.rotate()", "ServoDemo.write()", "ServoDemo.setAngle()"],
+      "options": [
+        "ServoDemo.move()",
+        "ServoDemo.rotate()",
+        "ServoDemo.write()",
+        "ServoDemo.setAngle()"
+      ],
       "answer": "ServoDemo.write()",
       "explanation": "ServoDemo.write(angle) sets the servo motor to the desired angle in degrees."
+    },
+    {
+      "question": "Why interoperability in IoT is an issue?",
+      "options": [
+        "IoT nodes are heterogeneous hence they communicate in different protocols",
+        "IoT nodes are homogeneous and communicate with the same protocol",
+        "IoT nodes do not communicate.",
+        "IoT nodes are small."
+      ],
+      "answer": "IoT nodes are heterogeneous hence they communicate in different protocols",
+      "explanation": "Interoperability is a challenge because IoT systems combine diverse devices, sensors, and platforms from various manufacturers, each using different communication protocols and data formats. This heterogeneity makes seamless data exchange and integration difficult without standardized interfaces or middleware."
+    },
+    {
+      "question": "UNSPSC provides a solution for which of the following?",
+      "options": [
+        "Manufacturing",
+        "Supply Chain",
+        "Classification",
+        "Communication"
+      ],
+      "answer": "Classification",
+      "explanation": "UNSPSC (United Nations Standard Products and Services Code) is a global classification system for products and services. It standardizes categorization for procurement and supply chain management, rather than direct manufacturing or communication."
+    },
+    {
+      "question": "Arduino development boards are equipped with micro-controller processors which are ................... with respect to their hardware configurations.",
+      "options": [
+        "closed source",
+        "open source",
+        "forward source",
+        "up sourced"
+      ],
+      "answer": "open source",
+      "explanation": "Arduino boards are built on open-source hardware principles. Their schematics, design files, and software are publicly available, allowing anyone to study, modify, and distribute the hardware."
+    },
+    {
+      "question": "Translation of inter-device communication forms an important part in solving device interoperability.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Translation between different communication protocols and data formats is essential for enabling diverse IoT devices to understand and work with each other, directly addressing device interoperability challenges."
+    },
+    {
+      "question": "With respect to the different wireless communication protocols such as Zigbee, Bluetooth, GPRS, 6LoWPAN and WiFi, which of the following terms can be associated with?",
+      "options": [
+        "Homogeneity",
+        "Heterogeneity",
+        "Self Service",
+        "All of the given"
+      ],
+      "answer": "Heterogeneity",
+      "explanation": "The variety of wireless protocols exemplifies heterogeneity. This diversity in standards and technologies is a primary challenge for interoperability in IoT systems."
+    },
+    {
+      "question": "Which among the following are valid Arduino datatypes?",
+      "options": [
+        "byte",
+        "char",
+        "Boolean",
+        "All of the given"
+      ],
+      "answer": "All of the given",
+      "explanation": "Arduino programming supports byte (8-bit unsigned number), char (character), and boolean (true/false value) data types."
+    },
+    {
+      "question": "What is the purpose of the delay() function in Arduino programming?",
+      "options": [
+        "To speed up the execution",
+        "To terminate the program",
+        "To reset all parameters",
+        "To make the program go to sleep for a certain duration."
+      ],
+      "answer": "To make the program go to sleep for a certain duration.",
+      "explanation": "The delay() function pauses the program for a specified number of milliseconds, allowing timing control for operations like blinking an LED."
+    },
+    {
+      "question": "Consider the following Arduino code snippet: String str = \"Hello World\"; String ptr = str.ToUpperCase(); What will be the value of String ptr?",
+      "options": [
+        "Hello World",
+        "helloworld",
+        "HELLOWORLD",
+        "WORLDHELLO"
+      ],
+      "answer": "HELLOWORLD",
+      "explanation": "The .ToUpperCase() function converts all characters in the String to uppercase. Applying it to \"Hello World\" results in \"HELLOWORLD\"."
+    },
+    {
+      "question": "What does the following code snippet do in interfacing a servo motor with the Arduino MEGA board? int servoPin = 12;",
+      "options": [
+        "Declares pin for connecting servo motor",
+        "Declares pin for providing power to MEGA board",
+        "Declares pin for Ground supply for servo motor",
+        "None of these"
+      ],
+      "answer": "Declares pin for connecting servo motor",
+      "explanation": "The code declares an integer variable servoPin and assigns it the value 12, representing the digital pin on the Arduino MEGA where the servo motor's control wire is connected."
+    },
+    {
+      "question": "State True or False. Statement: \"The 'Verify' option in the Arduino IDE checks the code for compilation errors.\"",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "The 'Verify' button in the Arduino IDE compiles the code to check for syntax errors or missing libraries. It does not upload the code."
+    },
+    {
+      "question": "The tool used to select a particular COM port for connecting Arduino to a serial connector is called a sketch.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "A sketch is an Arduino program. The COM port is selected from the Tools > Port menu in the Arduino IDE."
+    },
+    {
+      "question": "In general, with respect to any sensor that can be connected to an Arduino board, which of the following is correct?",
+      "options": [
+        "The sensor has infinite number of connecting pins",
+        "The sensor will have at least 3 pins (1+Vcc, 1 GND and 1 Data pin)",
+        "The sensor need not connect to the Arduino board.",
+        "The sensor will always have exactly 5 pins."
+      ],
+      "answer": "The sensor will have at least 3 pins (1+Vcc, 1 GND and 1 Data pin)",
+      "explanation": "Most basic sensors require at least three connections: Vcc for power, GND for ground, and a Data pin for signals. Some sensors may have extra pins, but three is the common minimum."
+    },
+    {
+      "question": "You connect the +Vcc PIN of a sensor with which of the corresponding PIN of Arduino board?",
+      "options": [
+        "3V",
+        "GND",
+        "PIN A5",
+        "PIN CTX"
+      ],
+      "answer": "3V",
+      "explanation": "The +Vcc pin of a sensor is connected to a power output pin on the Arduino, like 3.3V or 5V, depending on sensor voltage requirements. It is not connected to ground or data pins."
+    },
+    {
+      "question": "Servo is a type of............",
+      "options": [
+        "Sensor",
+        "Actuator",
+        "Modifier",
+        "Pacifier"
+      ],
+      "answer": "Actuator",
+      "explanation": "A servo is an actuator that converts electrical signals into precise physical movement. It performs an action rather than sensing the environment."
+    },
+    {
+      "question": "While uploading a sketch to an Arduino board, which of the following should be checked?",
+      "options": [
+        "Board",
+        "Serial Port",
+        "Both Board and Serial Port",
+        "Neither Board nor Serial Port."
+      ],
+      "answer": "Both Board and Serial Port",
+      "explanation": "To upload a sketch successfully, the correct Arduino board and COM port must be selected in the IDE. Selecting both ensures proper communication with the board."
     }
   ]
 }

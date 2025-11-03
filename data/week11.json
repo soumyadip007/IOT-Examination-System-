@@ -160,66 +160,134 @@
       "explanation": "SQL databases are designed to store and manage structured data organized in rows and columns with defined schemas."
     },
     {
-      "question": "Which among the following is the most probable application scenario for a smart grid?",
+      "question": "What are some of the other names of the smart grids?",
       "options": [
-        "Home automation",
-        "Hospital networks",
-        "Intelligent power plants",
-        "Crop monitoring"
+        "Energy internet",
+        "Electricity with a hand",
+        "Electrolyte",
+        "All of these"
       ],
-      "answer": "Intelligent power plants",
-      "explanation": "Smart grids integrate intelligent monitoring, control, and automation in power plants to optimize generation, distribution, and consumption of electricity efficiently."
+      "answer": "Energy internet",
+      "explanation": "The term 'Energy Internet' is a known alternative name for smart grids, describing a modernized, interconnected electrical system that uses digital communication and automation. The other options are not recognized terms."
     },
     {
-      "question": "With respect to a smart grid, which stakeholders are potentially benefitted?",
+      "question": "Which of the following is not done in traditional electrical grids?",
       "options": [
-        "Energy Service providers",
-        "Energy consumers/customers",
-        "Both energy service provides and consumers",
-        "Neither energy service providers nor consumers"
+        "Manual energy monitoring",
+        "Unidirectional energy distribution",
+        "Unidirectional communication",
+        "Distributed power plants"
       ],
-      "answer": "Both energy service provides and consumers",
-      "explanation": "Smart grids enhance efficiency, reliability, and cost-effectiveness, benefiting both energy providers (through better load management) and consumers (through reliable service and energy savings)."
+      "answer": "Distributed power plants",
+      "explanation": "Traditional electrical grids rely on centralized power plants, not distributed generation. They feature manual monitoring, unidirectional energy flow, and one-way communication."
     },
     {
-      "question": "It is not possible to perform load forecasting using a smart grid.",
+      "question": "Which of the following is a benefit associated with smart grids for customers?",
+      "options": [
+        "Reduced transmission of electricity",
+        "Higher electricity rates",
+        "Less security",
+        "Different pricing options"
+      ],
+      "answer": "Different pricing options",
+      "explanation": "Smart grids enable dynamic pricing (time-of-use, real-time pricing), allowing customers to save costs by shifting usage to off-peak hours, unlike traditional flat-rate billing."
+    },
+    {
+      "question": ".................... samples voltage and current with a fixed sample rate at the installed location.",
+      "options": [
+        "PEVS",
+        "DAUS",
+        "PMUS",
+        "None of these"
+      ],
+      "answer": "PMUS",
+      "explanation": "Phasor Measurement Units (PMUs) sample voltage and current at high, fixed rates (typically 30-60 samples per second) using synchronized timestamps from GPS for real-time grid monitoring."
+    },
+    {
+      "question": "Which of the following statements are true about MDMSs?",
+      "options": [
+        "Statements I and II",
+        "Statements I and III",
+        "Statements II and III",
+        "Statements I, II and III"
+      ],
+      "answer": "Statements I and II",
+      "explanation": "An MDMS (Meter Data Management System) is managed by energy providers and uses collected meter data to determine billing rates, making Statements I and II true. It does not handle geographical aggregation of energy data."
+    },
+    {
+      "question": "Which of the following aggregate the energy consumption or energy request of a certain geographical area?",
+      "options": [
+        "DAUS",
+        "Meter Data Management System",
+        "Buffer",
+        "None of these"
+      ],
+      "answer": "DAUS",
+      "explanation": "DAUS (Data Aggregation Unit System) collects and aggregates energy consumption or demand data from multiple meters within a specific geographical area for grid monitoring and management."
+    },
+    {
+      "question": "Which of the following statements are true about Dynamic System Attacks?",
+      "options": [
+        "Statements I and II",
+        "Statements I and III",
+        "Statements II and III",
+        "Statement I, II and III"
+      ],
+      "answer": "Statement I, II and III",
+      "explanation": "Replay attacks capture and retransmit sensor data, compromising output integrity. D-DIA deception attacks can mislead system controls, potentially causing operational collapse. Covert attacks extend replay attacks in a closed-loop manner to avoid detection while causing harm."
+    },
+    {
+      "question": ".................... is performed by compromising the availability of the grid component.",
+      "options": [
+        "Gateway",
+        "Data injection attacks",
+        "AMH",
+        "Denial of service"
+      ],
+      "answer": "Denial of service",
+      "explanation": "A Denial of Service (DoS) attack compromises the availability of a grid component by overwhelming it with traffic or requests, making it unable to function normally."
+    },
+    {
+      "question": ".................. is a primary challenge in IIoT.",
+      "options": [
+        "Worker health and safety",
+        "Optimised operations",
+        "Regulatory compliance",
+        "Integrate existing infrastructure into new IIoT infrastructure"
+      ],
+      "answer": "Integrate existing infrastructure into new IIoT infrastructure",
+      "explanation": "A primary challenge in IIoT is integrating legacy systems and existing infrastructure with new IIoT technologies due to compatibility, protocol translation, and upgrade costs."
+    },
+    {
+      "question": "........................ is based on a wrap and re-use approach.",
+      "options": [
+        "AoT",
+        "PoT",
+        "Toll",
+        "IIoT"
+      ],
+      "answer": "IIoT",
+      "explanation": "Industrial IoT (IIoT) often uses a 'wrap and reuse' approach, where existing industrial machinery and infrastructure are wrapped with sensors, connectivity, and software to integrate them into modern IIoT systems without full replacement."
+    },
+    {
+      "question": "Mechanized production is a part of the 4th Industrial Revolution.",
       "options": [
         "True",
         "False"
       ],
       "answer": "False",
-      "explanation": "Smart grids collect real-time data from sensors and meters, allowing accurate load forecasting and better planning for peak demand and energy distribution."
+      "explanation": "Mechanized production using water and steam power was the hallmark of the First Industrial Revolution. The Fourth Industrial Revolution is characterized by cyber-physical systems, IoT, AI, and smart automation."
     },
     {
-      "question": "With respect to the following Smart Grid architecture, which among the following is the most probable utility of the IP network?",
+      "question": "Which of the following happened in the 3rd Revolution?",
       "options": [
-        "IP network has no utility",
-        "IP network is used to connect smart grid components globally for seamless data transfer",
-        "IP network is used for multimedia video streaming only",
-        "IP network is used to induce more congestion"
+        "Mass production",
+        "IIoT",
+        "Mechanized production",
+        "None of these"
       ],
-      "answer": "IP network is used to connect smart grid components globally for seamless data transfer",
-      "explanation": "IP networks in smart grids allow global communication between grid components, enabling monitoring, control, and data analytics across distributed systems."
-    },
-    {
-      "question": "Smart Home is an isolated concept and is not integrable with smart grid?",
-      "options": [
-        "False",
-        "True"
-      ],
-      "answer": "False",
-      "explanation": "Smart homes can integrate with smart grids to optimize energy usage, enable demand response, and allow two-way communication between the home and utility providers."
-    },
-    {
-      "question": "Which of the following is a cloud application of smart grid?",
-      "options": [
-        "Information management",
-        "Energy management",
-        "Security",
-        "All of these"
-      ],
-      "answer": "All of these",
-      "explanation": "Cloud applications for smart grids include energy management, information management, and security solutions, enabling centralized monitoring, analysis, and decision-making."
+      "answer": "None of these",
+      "explanation": "The Third Industrial Revolution focused on automation through computers and electronics. Mass production belongs to the Second Revolution, mechanization to the First, and IIoT to the Fourth."
     },
     {
       "question": "Which of the following is not a vulnerability of Smart Grid?",
@@ -230,93 +298,27 @@
         "None of these"
       ],
       "answer": "None of these",
-      "explanation": "All listed factors—integrity breaches, physical threats, and dynamic system attacks—are recognized vulnerabilities of smart grids; hence 'None of these' is correct as none is exempt."
+      "explanation": "Integrity (data manipulation), physical threats (hardware damage), and dynamic system attacks (e.g., false data injection) are all recognized vulnerabilities in Smart Grids."
     },
     {
-      "question": "IIoT corresponds to which industrial revolution?",
+      "question": "Big data is characterized by 7 Vs..",
       "options": [
-        "1st",
-        "2nd",
-        "3rd",
-        "4th"
+        "True",
+        "False"
       ],
-      "answer": "4th",
-      "explanation": "Industrial IoT (IIoT) is part of Industry 4.0, the fourth industrial revolution, which emphasizes digitalization, automation, and connected smart systems."
-    },
-    {
-      "question": "IIoT is inherently data intensive.",
-      "options": [
-        "Yes",
-        "No"
-      ],
-      "answer": "Yes",
-      "explanation": "IIoT generates and processes massive volumes of real-time data from industrial sensors, machines, and connected devices, making it inherently data-intensive."
-    },
-    {
-      "question": "Which among the following is one of the requirements and utility of IIoT?",
-      "options": [
-        "Power plant interruption",
-        "Power plant virtualization",
-        "Power plant decentralization",
-        "Power plant denotification"
-      ],
-      "answer": "Power plant virtualization",
-      "explanation": "IIoT enables virtualization of industrial processes like power plants, allowing simulation, monitoring, and control over virtualized environments for efficiency and flexibility."
-    },
-    {
-      "question": "Smart Grid follows which type of flow of energy?",
-      "options": [
-        "Bidirectional",
-        "Unidirectional",
-        "Both a and b",
-        "Neither a nor b"
-      ],
-      "answer": "Bidirectional",
-      "explanation": "Smart grids support bidirectional energy flow, enabling distributed generation (e.g., solar panels) to feed energy back into the grid in addition to consuming power."
+      "answer": "True",
+      "explanation": "Big data is commonly characterized by 7 Vs: Volume, Velocity, Variety, Veracity, Value, Variability, and Visualization (sometimes Viscosity or Volatility)."
     },
     {
       "question": "What is the Flow of data?",
       "options": [
-        "Acquisition > Generation > Storage > Analysis",
-        "Generation > Storage > Analysis > Acquisition",
-        "Generation > Acquisition > Storage > Analysis",
+        "Acquisition>Generation>Storage>Analysis",
+        "Generation>Storage>Analysis>Acquisition",
+        "Generation>Acquisition>Storage>Analysis",
         "None of these"
       ],
-      "answer": "Generation > Acquisition > Storage > Analysis",
-      "explanation": "Data in smart grid and IIoT systems is first generated by sensors, acquired for processing, stored for future reference, and analyzed for insights and decision-making."
-    },
-    {
-      "question": "Intelligent transport system is least likely to render which of the following connectivity?",
-      "options": [
-        "Vehicle-to-vehicle connectivity",
-        "Vehicle-to-sensor connectivity",
-        "Vehicle-to-road infrastructure",
-        "Vehicle-to-home connectivity"
-      ],
-      "answer": "Vehicle-to-home connectivity",
-      "explanation": "Intelligent transport systems focus on V2V, V2I, and V2S connectivity for traffic management and safety; connectivity directly to a home is generally not within their scope."
-    },
-    {
-      "question": "Approximately around ________ of the total data available currently in the world is unstructured.",
-      "options": [
-        "20 %",
-        "40 %",
-        "60 %",
-        "80 %"
-      ],
-      "answer": "80 %",
-      "explanation": "Around 80% of global data is unstructured, including text, images, videos, and IoT sensor data, highlighting the need for advanced processing and analytics."
-    },
-    {
-      "question": "SQL manages ________________ data.",
-      "options": [
-        "Unstructured",
-        "Corrupt",
-        "Structured",
-        "Non-organized"
-      ],
-      "answer": "Structured",
-      "explanation": "SQL databases are designed to store and manage structured data organized in rows and columns with defined schemas."
+      "answer": "Generation>Acquisition>Storage>Analysis",
+      "explanation": "Data is first generated by sources (sensors, users), then acquired/collected, followed by storage in databases or clouds, and finally analyzed for insights."
     }
   ]
 }
